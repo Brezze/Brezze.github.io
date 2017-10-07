@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/main.min.css">
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#000">
+    <meta name="theme-color" content="#fff">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#fff">
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 </head>
 
 <body>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="box box--infinity">
                         <div class="box__inner">
-                        	 <p>Компания ООО «Логистика сервис» является общероссийским таможенным представителем (свидетельство о включении в Реестр таможенных представителей №0175/00).</p>
+                            <p>Компания ООО «Логистика сервис» является общероссийским таможенным представителем (свидетельство о включении в Реестр таможенных представителей №0175/00).</p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                         <p>Эксклюзивный сервис “выезд специалиста к Вам в офис по СПб” </p>
                     </div>
                     <div class="btn-wrap">
-                        <a href="#" class="btn btn--order btn--scroll">Сделать заявку</a>
+                        <a href="#form-head" class="btn btn--order btn--scroll">Сделать заявку</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
             <div class="propose-content">
                 <h3 class="h3">Специальное предложение</h3>
                 <p>При заказе фрахта+экспедирования в порту+автоперевозки, ставка за таможенное оформление <span>5000 руб за контейнер.</span></p>
-                <a href="#" class="btn btn--scroll">Заказать услугу</a>
+                <a href="#form-head" class="btn btn--scroll">Заказать услугу</a>
             </div>
         </div>
     </section>
@@ -113,12 +113,12 @@
                 <p>Шереметьевская, Московская областная таможня ( т/п Мамонтовский, Черноголовский, Краснозаводской, ЦЭД), Балтийская( Кронштадтский таможенный пост, Таможенный пост «Гавань», Турухтанный таможенный пост, Парголовский таможенный пост, ЦЭД Балтийской таможни), Санкт-Петербургская ( т/п Южный, Янинский таможенный пост), Пулковская, Выборгская, Смоленская, Новороссийская таможня</p>
             </div>
             <div class="doc-block">
-                <div class="doc-block-item"><img src="img/doc-1.jpg" alt="alt"></div>
-                <div class="doc-block-item"><img src="img/doc-2.jpg" alt="alt"></div>
-                <div class="doc-block-item"><img src="img/doc-3.jpg" alt="alt"></div>
-                <div class="doc-block-item"><img src="img/doc-4.jpg" alt="alt"></div>
-                <div class="doc-block-item"><img src="img/doc-5.jpg" alt="alt"></div>
-                <div class="doc-block-item"><img src="img/doc-5.jpg" alt="alt"></div>
+                <a href="img/doc-1.jpg" class="doc-block-item"><img src="img/doc-1.jpg" alt="alt"></a>
+                <a href="img/doc-2.jpg" class="doc-block-item"><img src="img/doc-2.jpg" alt="alt"></a>
+                <a href="img/doc-3.jpg" class="doc-block-item"><img src="img/doc-3.jpg" alt="alt"></a>
+                <a href="img/doc-4.jpg" class="doc-block-item"><img src="img/doc-4.jpg" alt="alt"></a>
+                <a href="img/doc-5.jpg" class="doc-block-item"><img src="img/doc-5.jpg" alt="alt"></a>
+                <a href="img/doc-5.jpg" class="doc-block-item"><img src="img/doc-5.jpg" alt="alt"></a>
             </div>
             <div class="centered">
                 <h2 class="h2 h2--logic">ООО «Логистика сервис» - это</h2>
@@ -399,7 +399,7 @@
                                 <label for="name">Ваше имя</label>
                             </div>
                             <div class="main-form-input-wrap">
-                                <input type="text" id="name">
+                                <input type="text" id="name" required>
                             </div>
                         </div>
                         <div class="main-form-wrap">
@@ -407,7 +407,7 @@
                                 <label for="phone">Телефон</label>
                             </div>
                             <div class="main-form-input-wrap">
-                                <input type="phone" id="phone">
+                                <input type="phone" id="phone" required placeholder="+7 (999) 999-99-99">
                             </div>
                         </div>
                         <div class="main-form-wrap">
@@ -499,19 +499,18 @@
                     <p>OOO “Логистика сервис”</p>
                     <p>190068, г. Санкт - Петербург</p>
                     <p>наб. Канала Грибоедова, д.129, офис 8Н</p>
-                    <p class="s-contacts-item__email">office@ls-spb.com</p>
+                    <a href="#" class="s-contacts-item__email">office@ls-spb.com</a>
                 </div>
                 <div class="s-contacts-item">
                     <span class="s-contacts-item__phone">(812) 714-17-23</span>
                     <span class="s-contacts-item__phone">(812) 713-68-90 </span>
-                    <a href="#" class="btn btn--scroll">Заказать звонок</a>
+                    <a href="#form-head" class="btn btn--scroll">Заказать звонок</a>
                 </div>
             </div>
         </div>
     </section>
     <div class="map">
-        <div class="map-wrap embed-container maps " id="map-wrap">
-            <iframe id="map" style="pointer-events: none" src="https://yandex.ua/map-widget/v1/-/CBU9zIAAoD" width="100%" height="483"></iframe>
+        <div class="map-wrap embed-container maps " id="map">
         </div>
     </div>
     <footer class="page-footer">
@@ -525,6 +524,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
     <script src="js/scripts.min.js"></script>
 </body>
 
