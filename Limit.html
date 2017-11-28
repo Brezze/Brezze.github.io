@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <section class="limit">
+        <div class="container-fluid">
+            <span class="btn-close"></span>
+            <div class="ref-node-block">
+                <div class="ref-node-head">
+                    <div class="h2 h2--gray">New Limit</div>
+                </div>
+                <form class="ref-node-form">
+                    <div class="ref-node-form__content">
+                    	<div class="ref-node-form__wrap ref-node-form__wrap--select">
+                            <label for="nodeLimit">Limit Type</label>
+                            <select id="nodeLimit" placeholder="123" required>
+                                <option value="" disabled selected hidden>--Select--</option>
+                                <option value="">Value 1</option>
+                                <option value="">Value 2</option>
+                            </select>
+                        </div>
+                        <div class="ref-node-form__wrap ref-node-form__wrap--select">
+                            <label for="nodeCycle">Refresh Cycle</label>
+                            <select id="nodeCycle" placeholder="123" required>
+                                <option value="" disabled selected hidden>--Select--</option>
+                                <option value="">Value 1</option>
+                                <option value="">Value 2</option>
+                            </select>
+                        </div>
+                        <h4 class="h4">Limit Definitions</h4>
+                        <div class="ref-node__row">
+                        		<div class="row">
+                        				<div class="col-sm-4">
+                        						<div class="ref-node-form__wrap ref-node-form__wrap--select">
+						                            <label for="nodeCurrency">Currency</label>
+						                            <select id="nodeCurrency" placeholder="123" required>
+						                                <option value="" disabled selected hidden>--Select--</option>
+						                                <option value="">Value 1</option>
+						                                <option value="">Value 2</option>
+						                            </select>
+						                        </div>
+                        				</div>
+                        				<div class="col-sm-3">
+                        						<div class="ref-node-form__wrap ref-node-form__wrap--select custom">
+						                            <label for="nodeOperator">Operator</label>
+						                            <select id="nodeOperator" placeholder="123" required>
+						                                <option value="" disabled selected hidden>--Select--</option>
+						                                <option value="">Value 1</option>
+						                                <option value="">Value 2</option>
+						                            </select>
+						                        </div>
+                        				</div>
+                        				<div class="col-sm-5">
+                        						<div class="ref-node-form__wrap">
+																				<label for="nodeLimit">Limit</label>
+																				<input type="text" placeholder="eg. $1,000,000.00" id="nodeLimit">
+																		</div>
+                        				</div>
+                        		</div>
+                        </div>
+                        <div class="ref-node__row">
+                        		<div class="row">
+                        				<div class="col-sm-4">
+                        						<div class="ref-node-form__wrap ref-node-form__wrap--select">
+						                            <label for="nodeCurrency">Currency</label>
+						                            <select id="nodeCurrency" placeholder="123" required>
+						                                <option value="" disabled selected hidden>--Select--</option>
+						                                <option value="">Value 1</option>
+						                                <option value="">Value 2</option>
+						                            </select>
+						                        </div>
+                        				</div>
+                        				<div class="col-sm-3">
+                        						<div class="ref-node-form__wrap ref-node-form__wrap--select custom">
+						                            <label for="nodeOperator">Operator</label>
+						                            <select id="nodeOperator" placeholder="123" required>
+						                                <option value="" disabled selected hidden>--Select--</option>
+						                                <option value="">Value 1</option>
+						                                <option value="">Value 2</option>
+						                            </select>
+						                        </div>
+                        				</div>
+                        				<div class="col-sm-5">
+                        						<div class="ref-node-form__wrap">
+																				<label for="nodeLimit">Limit</label>
+																				<input type="text" placeholder="eg. $1,000,000.00" id="nodeLimit">
+																		</div>
+                        				</div>
+                        		</div>
+                        		<span class="ref-node__row--close"></span>
+                        </div>
+                    </div>
+                    <button class="btn btn--ref">Create</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
