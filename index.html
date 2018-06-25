@@ -2,618 +2,313 @@
 <html lang="ru">
 
 <head>
+
     <meta charset="utf-8">
+
     <title>OptimizedHTML 4</title>
     <meta name="description" content="">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <!-- Template Basic Images Start -->
     <meta property="og:image" content="path/to/image.jpg">
     <link rel="icon" href="img/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <!-- Template Basic Images End -->
+
     <!-- Custom Browsers Color Start -->
     <meta name="theme-color" content="#000">
     <!-- Custom Browsers Color End -->
+
     <link rel="stylesheet" href="css/main.min.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-auto">
-                    <a href="#" class="logo">
-                        <img src="img/logo.png" alt="alt">
-                    </a>
-                </div>
-                <div class="col-auto">
-                    <div class="logo-content">Построение и отладка всех процессов связаных с перевозкой</div>
-                </div>
-                <div class="col mobile-menu">
-                    <nav class="main-nav">
-                        <ul class="main-list">
-                            <li class="current-menu-item"><a href="#">Наши преимущества</a></li>
-                            <li><a href="#offer">Услуги</a></li>
-                            <li><a href="#work">Процесс работы</a></li>
-                            <li><a href="#reviews">Отзывы</a></li>
-                            <li><a href="#contacts">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-auto hamburgers">
-                    <div class="hamburger hamburger--squeeze">
-                      <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                      </div>
+
+    <div class="main-wrapper">
+        <!-- HEADER START -->
+       <header class="header">
+            <div class="header-container">
+                <div class="header-line">
+                    <div class="header-left">
+                        <div class="logo-header logo">
+                            <img src="img/logo.png" alt="alt">
+                            <span>Группа компаний стройинновация</span>
+                        </div>
+                        <nav class="main-nav">
+                            <ul class="main-list">
+                                <li><a href="#">О компании</a></li>
+                                <li class="has-dropdown-menu">
+                                    <a href="#">Проекты</a>
+                                    <span class="arrow"></span>
+                                    <div class="dropdown-menu">
+                                        <h4 class="h4">Проекты</h4>
+                                        <div class="dropdown-menu__row">
+                                            <div class="dropdown-menu__item">
+                                                <div class="dropdown-menu__wrap">
+                                                    <div class="dropdown-menu__head">ЖК "Новый Век" (Иркутск)</div>
+                                                    <ul class="dropdown-menu__list">
+                                                        <li><a href="#">Жилая недвижимость</a></li>
+                                                        <li><a href="#">Коммерческая недвижимость</a></li>
+                                                        <li><a href="#">Планировки</a></li>
+                                                        <li><a href="#">Галерея</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown-menu__wrap">
+                                                    <div class="dropdown-menu__img">
+                                                        <img src="img/menu-img-1.jpg" alt="alt">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-menu__item">
+                                                <div class="dropdown-menu__wrap">
+                                                    <div class="dropdown-menu__head">Жилой Дом "Innovation" (Красноярск)</div>
+                                                    <ul class="dropdown-menu__list">
+                                                        <li><a href="#">Жилая недвижимость</a></li>
+                                                        <li><a href="#">Коммерческая недвижимость</a></li>
+                                                        <li><a href="#">Планировки</a></li>
+                                                        <li><a href="#">Галерея</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown-menu__wrap">
+                                                    <div class="dropdown-menu__img">
+                                                        <img src="img/menu-img-2.jpg" alt="alt">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-menu__wrap">
+                                            <h4 class="h4">Социальные Проекты</h4>
+                                            <ul class="dropdown-menu__list">
+                                                <li><a href="#">Галерея</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-menu__wrap">
+                                            <h4 class="h4">документы</h4>
+                                            <ul class="dropdown-menu__list">
+                                                <li><a href="#">Раскрытие информации</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">СоцПроекты</a></li>
+                                <li><a href="#">Новости</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-right__item">
+                            <div class="header-phone">
+                                <div class="bg-icon-head-2 icon-sprite"></div>
+                                <div class="header-phone__wrap">
+                                    <a href="tel:(391) 219-02-09" class="header-phone__phone">(391) 219-02-09</a>
+                                    <span>Красноярск</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right__item">
+                            <div class="header-phone">
+                                <div class="bg-icon-head-1 icon-sprite"></div>
+                                <div class="header-phone__wrap">
+                                    <a href="tel:(3952) 70-20-32" class="header-phone__phone">(3952) 70-20-32</a>
+                                    <span>Иркутск</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right__item">
+                            <a href="#modal" class="callback callback-modal">
+                                <span class="bg-phone-black icon-sprite"></span>
+                                <span>Перезвоните мне</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="s-main" style="background-image: url(img/main-bg.jpg);">
-        <div class="s-main-wrap">
+        </header> 
+        <!-- HEADER END -->
+        <div class="s-main">
+            <video id="vidageVideo" class="vidage-video" preload="metadata" loop autoplay muted>
+                <source src="video/324.mp4" type="video/mp4">
+                <source src="video/324.webm" type="video/webm">
+            </video>
             <div class="container">
                 <div class="s-main-content">
-                    <h1 class="h1">
-                        <span>Эффективная</span>
-                        Оптимизация логистики
-                    </h1>
-                    <p>Мы погружаемся в систему Вашего бизнеса и позволяем экономить на всех процессах — доставке, перевозке, контроле груза и поиске надежного поставщика.</p>
-                    <a href="#modal" class="btn open-modal">
-                        <span>Получить бесплатную консультацию</span>
-                        <span class="sprite icon-message"></span>
-                    </a>
-                    <div class="s-main-offer">
-                        <div class="s-main-offer__item">
-                            <img src="img/main-offer-1.png" alt="alt">
-                            <span>Только лучшие предложения<br> от проверенных перевозчиков</span>
-                        </div>
-                        <div class="s-main-offer__item">
-                            <img src="img/main-offer-2.png" alt="alt">
-                            <span>Быстрая и продуманная <br>работа для Вашего комфорта</span>
-                        </div>
-                    </div>
-                    <div class="scroll-down">
-                        <span class="sprite icon-down"></span>
-                        <span>Скрольте вниз</span>
-                    </div>
+                    <h1 class="h1">СТРОИТЕЛЬСТВО И ПРОЕКТИРОВАНИЕ</h1>
+                    <span>многоквартирных жилых домов административных зданий и сооружений</span>
+                    <a href="#" class="btn btn--blue">смотреть объекты</a>
                 </div>
             </div>
-            <img src="img/main-circle.png" alt="alt" class="s-main__img">
+            <img src="img/emblem-white.png" alt="alt" class="s-main__emblem">
         </div>
-    </section>
-    <section class="s-main-features">
-        <div class="container">
-            <div class="s-main-features__wrap">
-                <img src="img/feature.png" alt="alt" class="s-main-features__wrap-img">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="s-main-features__item">
-                            <div class="s-main-features__num">01</div>
-                            <p>Только лучшие предложение от проверенных перевозчиков</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="s-main-features__item">
-                            <div class="s-main-features__num">02</div>
-                            <p>Только быстрая и продуманная работа компании для Вашего комфорта</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="s-main-features__item">
-                            <div class="s-main-features__num">03</div>
-                            <p>Прозрачность всех сфер логистики, открытость к сотрудничеству и гарантия качества</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="problem" class="problem" style="background-image: url(img/problem.png);">
-        <div class="container">
-            <h2 class="h2 h2--black">Ваши проблемы — <span>наше решение</span></h2>
-            <div class="problem-wrap">
-                <div class="problem-item problem-item--first">
-                    <div class="problem-item__head">Успешное сотрудничество</div>
-                    <p>Наш профессионализм и ваше желание стать лучшими дадут свои плоды.</p>
-                </div>
-                <div class="problem-item problem-item--second">
-                    <div class="problem-item__head">Профессионализм</div>
-                    <p>Мы уважаем труд каждого нашего клиента и всегда идем навстречу развитию малого и крупного бизнеса.</p>
-                </div>
-                <div class="problem-item problem-item--third">
-                    <div class="problem-item__head">Безопасность</div>
-                    <p>Возможность следить за каждым процессом, статусом и расположение Вашего груза на протяжении совместной работы.</p>
-                </div>
-                <div class="problem-item problem-item--fourth">
-                    <div class="problem-item__head">Опыт</div>
-                    <p>Суммарный опыт наших специалистов составляет 35 лет. Быстро находим правильные решения в любых вопросах.</p>
-                </div>
-                <div class="problem-item problem-item--fifth">
-                    <div class="problem-item__head">Ответственность</div>
-                    <p>От начальных переговоров и до получения товара всеми процессами занимаются профессионалы.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="result">
-        <div class="container">
-            <div class="result-block">
-                <div class="result-block__wrap">
-                    <div class="row justify-content-between">
-                        <div class="col-md-6">
-                           <div class="result-block__content">
-                               <h2 class="h2 h2--black">Проблемы бизнеса, которые <span>решает</span> оптимизация логистики</h2>
-                               <p>Закажите <strong>бесплатную консультацию</strong> эксперта по логистике и мы поможем <strong>сократить расходы</strong> вашей компании.</p>
-                           </div>
-                        </div>
-                        <div class="col-md-5">
-                            <form action="/" class="form form--user">
-                                <div class="form-row">
-                                    <label>Ваше имя</label>
-                                    <div class="form-item">
-                                        <span class="sprite icon-user"></span>
-                                        <input type="text" class="input" placeholder="Дмитрий">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <label>Телефон</label>
-                                    <div class="form-item">
-                                        <span class="sprite icon-phone"></span>
-                                        <input type="text" id="phone" class="input" placeholder="+7 (___) ___-____">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <button class="btn">Оставить заявку</button>
-                                </div>
-                                <div class="form-row">
-                                    <input type="checkbox" id="privacy-bot1" checked>
-                                    <label for="privacy-bot1" class="form-label">Нажимая на кнопку я даю свое согласие на обработку моих персональных данных</label>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="graph">
-                    <img src="img/result-bg.png" alt="alt">
-                    <div class="graph-item graph-item--first">
-                        <div class="graph-item__round">
-                            <span></span>
-                        </div>
-                        <div class="graph-item__hidden">
-                            <div class="problem-item__head">Финансовые ловушки</div>
-                            <p>Теперь вы получите полный официальный расчетный лист от перевозчика и перестанете беспокоиться за свои деньги.</p>
-                        </div>
-                    </div>
-                    <div class="graph-item graph-item--second">
-                        <div class="graph-item__round">
-                            <span></span>
-                        </div>
-                        <div class="graph-item__hidden">
-                            <div class="problem-item__head">Медлительность</div>
-                            <p>Теперь процесс доставки товара соприкасается с оформлением документов - вся бумажная работа проводится быстро и заблаговременно.</p>
-                        </div>
-                    </div>
-                    <div class="graph-item graph-item--third">
-                        <div class="graph-item__round">
-                            <span></span>
-                        </div>
-                        <div class="graph-item__hidden">
-                            <div class="problem-item__head">Безответственность</div>
-                            <p>Каждый наш клиент может узнать статус и местоположение своего груза в любое время суток</p>
-                        </div>
-                    </div>
-                    <div class="graph-item graph-item--fourth">
-                        <div class="graph-item__round">
-                            <span></span>
-                        </div>
-                        <div class="graph-item__hidden">
-                            <div class="problem-item__head">Неопытность</div>
-                            <p>С нами Вам не стоит беспокоиться о незнании системы логистики - каждый начинающий и опытный бизнесмен сталкиваются с этими проблемами. Станьте частью процесса доставки с нами</p>
-                        </div>
-                    </div>
-                    <div class="graph-item graph-item--fifth">
-                        <div class="graph-item__round">
-                            <span></span>
-                        </div>
-                        <div class="graph-item__hidden">
-                            <div class="problem-item__head">Ненадежность</div>
-                            <p>Не стоит волноваться за сохранность и сроки доставки Вашего товара - наши специалисты помогут Вам получить необходимый груз в сжатые сроки</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="result-count">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="result-count__item">
-                            <div class="num">15</div>
-                            <p>лет опыта имеют наши специалисты в логистике и ВЭД</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="result-count__item">
-                            <div class="num">152</div>
-                            <p>завершено проектов и задач для наших клиентов</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="result-count__item">
-                            <div class="num">245</div>
-                            <p>тысяч наименований товаров перевезено специалистами</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="result-count__item">
-                            <div class="num">17</div>
-                            <p>миллионов долларов сэкономлено клиентами</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="offer" style="background-image: url(img/work-bg.png);" id="offer">
-        <div class="container">
-            <div class="offer-head">
-                <div class="row align-items-center">
-                    <div class="col-12 col-sm-6">
-                        <h2 class="h2 h2--black">Что мы предлагаем</h2>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <p>Inwyl Consulting — это начало экономического прогресса рынка логистики в Украине.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="offer-wrap">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="offer-item">
-                            <div class="offer-item__price">
-                                <span class="dollar">$</span>
-                                <span class="price">150</span>
-                            </div>
-                            <div class="offer-item__prehead">/ разовая сделка</div>
-                            <div class="offer-item__head">Хороший поставщик</div>
-                            <ul class="offer-item__list">
-                                <li>Поиск проверенных партнеров
-                                </li>
-                                <li>Проверка поставщика на добросовестность и платежеспособность</li>
-                                <li>Поиск и налаживание контакт с лучшими поставщиками по соотношению цены и качества</li>
-                                <li>Подготовка документации и предварительных договоров
-                                </li>
-                            </ul>
-                            <a href="#modal" class="btn open-modal">Заказать</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="offer-item">
-                            <div class="offer-item__price">
-                                <span class="dollar">$</span>
-                                <span class="price">50</span>
-                            </div>
-                            <div class="offer-item__prehead">/ разовая сделка</div>
-                            <div class="offer-item__head">Разовая поставка</div>
-                            <ul class="offer-item__list">
-                                <li>Переговоры между поставщиком и заказчиком
-                                </li>
-                                <li>Поиск оптимального маршрута доставки, уточнение сроков</li>
-                                <li>Мониторинг цен услуг логистов
-                                </li>
-                                <li>Подготовка полного пакета документов</li>
-                                <li>Контроль поставки товара</li>
-                                <li>Организация прохождения таможенного контроля и достаки груза на склад</li>
-                            </ul>
-                            <a href="#modal" class="btn open-modal">Заказать</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="offer-item">
-                            <div class="offer-item__price">
-                                <span class="dollar">$</span>
-                                <span class="price">200</span>
-                            </div>
-                            <div class="offer-item__prehead">/ разовая сделка</div>
-                            <div class="offer-item__head">Твой логист</div>
-                            <ul class="offer-item__list">
-                                <li>Переговоры между поставщиком и заказчиком
-                                </li>
-                                <li>Поиск оптимального маршрута доставки, уточнение сроков</li>
-                                <li>Мониторинг цен услуг логистов
-                                </li>
-                                <li>Подготовка полного пакета документов</li>
-                                <li>Контроль поставки товара</li>
-                                <li>Организация прохождения таможенного контроля и достаки груза на склад</li>
-                            </ul>
-                            <a href="#modal" class="btn open-modal">Заказать</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="offer-item">
-                            <div class="offer-item__price">
-                                <span class="dollar">$</span>
-                                <span class="price">300</span>
-                            </div>
-                            <div class="offer-item__prehead">/ разовая сделка</div>
-                            <div class="offer-item__head">Комплекс ВЭД</div>
-                            <ul class="offer-item__list">
-                                <li>Комплект всех услуг на месяц</li>
-                            </ul>
-                            <a href="#modal" class="btn open-modal">Заказать</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section class="need">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="need-item">
-                                <div class="need-item__head">Заголовок. Для кого.</div>
-                                <p>Описание. Задача организации, в особенности же сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий. ственных финансовых и административных условий.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="need-item second">
-                                <div class="need-item__head">Заголовок. Для кого.</div>
-                                <p>Описание. Задача организации, в особенности же сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="need-item third">
-                                <div class="need-item__head">Заголовок. Для кого.</div>
-                                <p>Описание. Задача организации, в особенности же сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="work" id="work">
-                <div class="container">
-                    <h2 class="h2 h2--black tl-center">Как это работает</h2>
-                    <div class="work-wrap">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="work-item">
-                                    <div class="work-item__sheme">Схема работы</div>
-                                    <div class="row justify-content-between align-items-center">
-                                        <div class="col-auto">
-                                            <div class="work-item__num">01</div>
+        <div class="s-content" style="background-image: url(img/main-bottom.jpg)">
+            <div class="wrapper">
+               <div class="s-features">
+                    <div class="s-features-row">
+                        <div class="s-features-wrap">
+                            <div class="s-features__item">
+                                <div class="s-features__item-row">
+                                    <div class="s-features__item-img">
+                                        <img src="img/main-house-1.jpg" alt="alt">
+                                        <div class="s-features__item-info">
+                                            <span class="s-features__item-name">ЖК “Новый Век”</span>
+                                            <span class="s-features__item-city">(Иркутск)</span>
                                         </div>
-                                        <div class="col-auto">
-                                            <div class="work-item__img">
-                                                <img src="img/work-1.png" alt="alt">
-                                            </div>
+                                        <div class="s-features__item-hidden">
+                                            <ul class="s-features__item-list">
+                                                <li><a href="#">Жилой комплекс</a></li>
+                                                <li><a href="#">Расположение</a></li>
+                                                <li><a href="#">Планировки</a></li>
+                                                <li><a href="#">Преимущества</a></li>
+                                                <li><a href="#">Автопарковки</a></li>
+                                                <li><a href="#">Документы</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <p>Ищем наиболее выгодные варианты для любых международных процессов по доставке Вашего товара.</p>
+                                    <div class="s-features__item-map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.2053346133457!2d104.33457026700572!3d52.27597408988435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5da83b75b84ee695%3A0xc198543c15ae0188!2z0YPQuy4g0JfQsNCz0L7RgdC60LjQvdCwLCAzLCDQmNGA0LrRg9GC0YHQuiwg0JjRgNC60YPRgtGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgNjY0MDIz!5e0!3m2!1sru!2sua!4v1529671425368" style="border:0" allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="work-item">
-                                    <div class="row justify-content-between align-items-center">
-                                        <div class="col-auto">
-                                            <div class="work-item__num">02</div>
+                        </div>
+                        <div class="s-features-wrap">
+                            <div class="s-features__item">
+                                <div class="s-features__item-row">
+                                    <div class="s-features__item-img">
+                                        <img src="img/main-house-2.jpg" alt="alt">
+                                        <div class="s-features__item-info">
+                                            <span class="s-features__item-name">Жилой Дом “Innovation”</span>
+                                            <span class="s-features__item-city">(Красноярск)</span>
                                         </div>
-                                        <div class="col-auto">
-                                            <div class="work-item__img">
-                                                <img src="img/work-2.png" alt="alt">
-                                            </div>
+                                        <div class="s-features__item-hidden">
+                                            <ul class="s-features__item-list">
+                                                <li><a href="#">Жилой комплекс</a></li>
+                                                <li><a href="#">Расположение</a></li>
+                                                <li><a href="#">Планировки</a></li>
+                                                <li><a href="#">Преимущества</a></li>
+                                                <li><a href="#">Автопарковки</a></li>
+                                                <li><a href="#">Документы</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <p>Выходим на контакт с проверенными логистическими компаниями, информируем Вас о сроках и стоимости услуг.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="work-item">
-                                    <div class="row justify-content-between align-items-center">
-                                        <div class="col-auto">
-                                            <div class="work-item__num">03</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="work-item__img">
-                                                <img src="img/work-3.png" alt="alt">
-                                            </div>
-                                        </div>
+                                    <div class="s-features__item-map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.2053346133457!2d104.33457026700572!3d52.27597408988435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5da83b75b84ee695%3A0xc198543c15ae0188!2z0YPQuy4g0JfQsNCz0L7RgdC60LjQvdCwLCAzLCDQmNGA0LrRg9GC0YHQuiwg0JjRgNC60YPRgtGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgNjY0MDIz!5e0!3m2!1sru!2sua!4v1529671425368" style="border:0" allowfullscreen></iframe>
                                     </div>
-                                    <p>Обговариваем условия сотрудничества между клиентом и компанией.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="work-item">
-                                    <div class="row justify-content-between align-items-center">
-                                        <div class="col-auto">
-                                            <div class="work-item__num">04</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="work-item__img">
-                                                <img src="img/work-4.png" alt="alt">
-                                            </div>
-                                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-news">
+                    <div class="s-news-wrap">
+                        <div class="s-news-item">
+                            <h2 class="h2">ООО "СтройИнновация"</h2>
+                            <p>Предприятие «СтройИнновация» было создано в 1989 году группой энтузиастов, которые первыми в городе стали осваивать технологию монолитного домостроения. За 28 лет  оно превратилась в огромный холдинг, который включает в себя компании различных направлений деятельности: инвестиционные, промышленные, строительные, проектные и сервисные. За счет этого в Холдинге обеспечен полный строительный цикл: от проектирования, производства строительных материалов и собственно строительства до продажи и эксплуатации объектов.</p>
+                            <p>А сколько счастливых семей переселились в новые квартиры! За годы своей деятельности на строительном рынке Красноярска компания сдала более миллиона квадратных метров жилой недвижимости. Предприятие «СтройИнновация» было создано в 1989 году группой энтузиастов, которые первыми в городе стали осваивать технологию монолитного домостроения. За 28 лет  оно превратилась в огромный холдинг, который включает в себя компании различных направлений деятельности: инвестиционные, промышленные, строительные, проектные и сервисные. За счет этого в Холдинге обеспечен полный строительный цикл: от проектирования, производства строительных материалов и собственно строительства до продажи и эксплуатации объектов.</p>
+                            <a href="#" class="read-more">Подробнее »</a>
+                        </div>
+                        <div class="s-news-item">
+                            <h4 class="h4">Последние новости</h4>
+                            <div class="preview">
+                                <div class="preview-item">
+                                    <div class="preview-img">
+                                        <img src="img/new-preview-1.jpg" alt="alt">
                                     </div>
-                                    <p>Компетентные специалисты по международной логистике быстро и ответственно занимаются доставкой и оформлением Вашего товара.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="work-item">
-                                    <div class="row justify-content-between align-items-center">
-                                        <div class="col-auto">
-                                            <div class="work-item__num">05</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="work-item__img">
-                                                <img src="img/work-5.png" alt="alt">
-                                            </div>
-                                        </div>
+                                    <div class="preview-content">
+                                        <span class="preview-content__date">16 января 2017</span>
+                                        <div class="preview-content__head">График работы отдела продаж в предпраздничные и праздничные дни</div>
+                                        <a href="#" class="preview-content__more">Подробнее »</a>
                                     </div>
-                                    <p>Вместе с товаром вы получаете полный официальный расчетный лист от перевозчика.</p>
+                                </div>
+                                <div class="preview-item">
+                                    <div class="preview-img">
+                                        <img src="img/new-preview-2.jpg" alt="alt">
+                                    </div>
+                                    <div class="preview-content">
+                                        <span class="preview-content__date">16 января 2017</span>
+                                        <div class="preview-content__head">Пробуем новые решения в шумоизоляции квартир</div>
+                                        <a href="#" class="preview-content__more">Подробнее »</a>
+                                    </div>
+                                </div>
+                                <div class="preview-item">
+                                    <div class="preview-img">
+                                        <img src="img/new-preview-3.jpg" alt="alt">
+                                    </div>
+                                    <div class="preview-content">
+                                        <span class="preview-content__date">16 января 2017</span>
+                                        <div class="preview-content__head">Правительство запустило новую программу субсидирования ипотеки</div>
+                                        <a href="#" class="preview-content__more">Подробнее »</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="work-item work-item--last">
-                                    <div class="work-item__head">Хотелось бы узнать подробнее?</div>
-                                    <a href="#modal" class="btn btn--white open-modal">Получить консультацию</a>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-    <footer class="footer" style="background-image: url(img/footer-bg.png);">
-        <div class="wrapper">
-            <div class="site-head" id="reviews">
-                <p><span>Отзывы</span></p>
-                <h2 class="h2">Довольных клиентов</h2>
-            </div>
-            <div class="client">
-                <div class="client-slide">
-                    <div class="client-slide__head">
-                        <div class="wrap">
-                            <div class="name">Екатерина М.</div>
-                            <div class="company">Директор агентства «Megagroup»</div>
-                        </div>
-                        <img src="img/review-2.png" alt="alt">
-                    </div>
-                    <p>«Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития.</p>
-                    <p>Рамки и место обучения кадров влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач»</p>
-                </div>
-                <div class="client-slide">
-                    <div class="client-slide__head">
-                        <div class="wrap">
-                            <div class="name">Екатерина М.</div>
-                            <div class="company">Директор агентства «Megagroup»</div>
-                        </div>
-                        <img src="img/review-1.png" alt="alt">
-                    </div>
-                    <p>«Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития.</p>
-                    <p>Рамки и место обучения кадров влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач»</p>
-                </div>
-                <div class="client-slide">
-                    <div class="client-slide__head">
-                        <div class="wrap">
-                            <div class="name">Екатерина М.</div>
-                            <div class="company">Директор агентства «Megagroup»</div>
-                        </div>
-                        <img src="img/review-2.png" alt="alt">
-                    </div>
-                    <p>«Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития.</p>
-                    <p>Рамки и место обучения кадров влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач»</p>
-                </div>
-                <div class="client-slide">
-                    <div class="client-slide__head">
-                        <div class="wrap">
-                            <div class="name">Екатерина М.</div>
-                            <div class="company">Директор агентства «Megagroup»</div>
-                        </div>
-                        <img src="img/review-1.png" alt="alt">
-                    </div>
-                    <p>«Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития.</p>
-                    <p>Рамки и место обучения кадров влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач»</p>
-                </div>
-                <div class="client-slide">
-                    <div class="client-slide__head">
-                        <div class="wrap">
-                            <div class="name">Екатерина М.</div>
-                            <div class="company">Директор агентства «Megagroup»</div>
-                        </div>
-                        <img src="img/review-2.png" alt="alt">
-                    </div>
-                    <p>«Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития.</p>
-                    <p>Рамки и место обучения кадров влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач»</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="site-head">
-                <h2 class="h2">Оставьте заявку</h2>
-                <p class="dark">И получите бесплатную консультацию</p>
-            </div>
-            <form action="/" class="form form--footer">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-md-4">
-                        <span class="sprite icon-user"></span>
-                        <input type="text" class="input" placeholder="Ваше имя">
-                    </div>
-                    <div class="col-md-4">
-                        <span class="sprite icon-phone"></span>
-                        <input type="text" class="input" placeholder="Телефон" id="phone1">
-                    </div>
-                    <div class="col-md-4">
-                        <button class="btn">Оставить заявку</button>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <input type="checkbox" id="privacy-bot" checked>
-                        <label for="privacy-bot" class="form-label">Нажимая на кнопку я даю свое согласие на обработку моих персональных данных</label>
-                    </div>
-                </div>
-            </form>
-            <div class="site-head">
-                <p><span>Мы всегда</span></p>
-                <h2 class="h2">На связи с бизнесом</h2>
-            </div>
-            <div class="footer__contact" id="contacts">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="footer-info">
-                            <div class="footer-info__row marker">
-                                <span class="sprite icon-marker"></span>
-                                <p>Москва, ул. Багратионовский проезд,<br> дом 1, корпус 20,<br> Бизнес центр «Название»</p>
-                            </div>
-                            <div class="footer-info__row phone">
-                                <span class="sprite icon-phone"></span>
-                                <a href="tel:+ 38 (093) 213 05 11" class="footer-info__phone">+ 38 (093) <span>213 05 11</span></a>
-                            </div>
-                            <div class="footer-info__row envelope">
-                                <span class="sprite icon-envelope"></span>
-                                <p>Отдел по работе с клиентами: inwylagency@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="copyright">© 2018, Inwyl Consulting Agency. Все права защищены</div>
-                    </div>
-                    <div class="col-md-8">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.7843853095833!2d37.511181999536184!3d55.744875205230976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5495892887761%3A0x4df9280b8b0bf44b!2z0JHQsNCz0YDQsNGC0LjQvtC90L7QstGB0LrQuNC5INC_0YAt0LQsIDEsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjEwODc!5e0!3m2!1sru!2sua!4v1529752103467" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <!-- MODAL -->
-    <div class="modal mfp-hide" id="modal">
-        <div class="modal-wrap">
-            <h3 class="h3">Свяжитесь с нами</h3>
-            <form action="/" class="form form--user">
-                <div class="form-row">
-                    <label>Ваше имя</label>
-                    <div class="form-item">
-                        <span class="sprite icon-user"></span>
-                        <input type="text" class="input" placeholder="Дмитрий">
+        <!-- FOOTER START -->
+        <footer class="footer">
+            <div class="header-container">
+                <div class="footer-line">
+                    <div class="footer-item">
+                        <div class="logo-footer logo">
+                            <img src="img/logo.png" alt="alt">
+                            <span>Группа компаний стройинновация</span>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="copyright">© 2013-2017 ООО «СтройИнновация»</div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__link">
+                            <div class="bg-file icon-sprite"></div>
+                            <a href="#">Раскрытие информации</a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__link">
+                            <div class="bg-marker icon-sprite"></div>
+                            <a href="#">Иркутск, ул.Ядринцева, д.1/9, 2 этаж</a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__link">
+                            <div class="bg-phone icon-sprite"></div>
+                            <a href="#">(3952) 70-20-20 <span>(офис продаж)</span></a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__link">
+                            <div class="bg-envelope icon-sprite"></div>
+                            <a href="mailto:stroyinn2015@mail.ru">stroyinn2015@mail.ru</a>
+                        </div>
                     </div>
                 </div>
-                <div class="form-row">
-                    <label>Телефон</label>
-                    <div class="form-item">
-                        <span class="sprite icon-phone"></span>
-                        <input type="text" id="phone2" class="input" placeholder="+7 (___) ___-____">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <button class="btn">Оставить заявку</button>
-                </div>
-                <div class="form-row">
-                    <input type="checkbox" id="privacy-bot2" checked>
-                    <label for="privacy-bot2" class="form-label">Нажимая на кнопку я даю свое согласие на обработку моих персональных данных</label>
-                </div>
-            </form>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+        <!-- MODAL START -->
+        <div class="modal mfp-hide" id="modal">
+            <div class="modal-content">
+                <h4 class="h4">У вас есть вопросы? Мы будем рады на них ответить!</h4>
+                <p class="modal-text">Укажите свой номер телефона ниже и наши менеджеры свяжутся с вами как можно скорее.</p>
+                <form action="/" class="modal-form">
+                    <input type="phone" placeholder="Ваш номер телефона">
+                    <button class="callback callback--blue">
+                        <span class="bg-phone-white icon-sprite"></span>
+                        <span>Перезвоните мне</span>
+                    </button>
+                </form>
+            </div>
         </div>
+        <!-- MODAL END -->
     </div>
+
+    <!-- Custom HTML -->
+
     <script src="js/scripts.min.js"></script>
+
 </body>
 
 </html>
