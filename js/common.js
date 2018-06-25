@@ -1,80 +1,39 @@
 $(function() {
 
-	$('.client').slick({
-		dots: true,
-		arrows: false,
-		slidesToShow: 2,
-    centerMode: true,
-    centerPadding: '370px',
-		responsive: [
-    {
-      breakpoint: 1480,
-      settings: {
-        slidesToShow: 2,
-        centerPadding: '170px',
-        centerMode: true,
-      }
-    },
-		{
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 1,
-        centerPadding: '70px',
-        centerMode: true,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerMode: false,
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        centerMode: false,
-      }
-    }
-  ]
+	// MODAL
+
+	$('.callback-modal').magnificPopup({
+	  type:'inline',
+	  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
 
-	$('.hamburger').click(function() {
-      $(this).toggleClass('is-active');
-      $('.main-nav').toggleClass('open');
-  });
+	// SLICK SLIDER
 
-  $('.open-modal').magnificPopup({
-    type:'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-  });
+	$('.s-plan-slider').slick({
+		dots: true,
+		arrows: false,
+		slidesToShow: 1,
+	});
 
-  $("#phone").mask("+7 (999) 999-9999");
-  $("#phone1").mask("+7 (999) 999-9999");
-  $("#phone2").mask("+7 (999) 999-9999");
+	// ACCORDION JQUERY
 
-  $('.scroll-down').click(function(e) { // без мерцания
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: $('#problem').position().top
-    }, 500);
-  });
+	$('.s-document > li:eq(0) a').addClass('active').next().slideDown();
 
-  $(".main-list").on("click", "a", function(event) {
-      event.preventDefault();
-      var id = $(this).attr('href'),
-          top = $(id).offset().top;
-      $('body,html').animate({ scrollTop: top - 50 }, 1000);
+    $('.s-document a').click(function(j) {
+        var dropDown = $(this).closest('li').find('.drop');
 
-          if($(window).width() <= 767) {
-            $('.page-header-contact').slideToggle(function() {
-          if ($(this).css('display') === 'none') {
-              $(this).removeAttr('style');
-              }
-          });
-            $('.hamburger').toggleClass('is-active');
-          }
-  });
+        $(this).closest('.s-document').find('.drop').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.s-document').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
 
 });
