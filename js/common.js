@@ -1,5 +1,18 @@
 $(function() {
 
+	$(window).on('resize', function() {
+    if ($(window).width() <= 992) {
+        $('.info-first').click(function(){
+				  $('.s-features__item-info + .first').toggleClass('open');
+				});
+				$('.info-second').click(function(){
+				  $('.s-features__item-info + .second').toggleClass('open');
+				});
+    } 
+}).trigger('resize');
+
+
+
 	// MODAL
 
 	$('.callback-modal').magnificPopup({
@@ -37,3 +50,4 @@ $(function() {
     });
 
 });
+
