@@ -29,7 +29,7 @@
 
 <body>
 
-	<header class="header header--main">
+	<header class="header">
 		<div class="container">
 			<div class="header-top">
 				<div class="search">
@@ -287,115 +287,330 @@
 		</div>
 	</header>
 
-	<section class="s-main">
-		<div class="s-main__slider">
-			<div class="s-main__slide image">
-				<img src="img/main-screen-1.jpg" alt="alt">
-			</div>
-			<div class="s-main__slide image">
-				<img src="img/main-screen-2.jpg" alt="alt">
-			</div>
-		</div>
-	</section>
-
-	<div class="s-content">
+	<div class="s-content catalogs">
 		<div class="container">
-			<div class="row align-items-center s-content-grid__row">
-				<div class="col-md-8">
-					<div class="s-content-head">
-						<h1 class="head-60">Fashion Studio Creative</h1>
-						<p>Несколько слов о марке и бренде. </p>
+			<div class="catalogs-block">
+				<aside class="catalogs-sidebar">
+					<div class="catalogs-sidebar__head font-18" id="filterToggler">Фильтр товаров</div>
+					<div class="catalogs-sidebar__wrap">
+						<div class="catalogs-sidebar__content">
+							<div class="catalogs-sidebar__filter">
+								<div class="catalogs-sidebar__filter-head">По цене</div>
+								<div class="rangeslider">
+									<div id="skipstep"></div>
+									<div class="rangeslider__nav">
+										<div id="skip-value-lower"></div>
+										<div id="skip-value-upper"></div>
+									</div>
+								</div>
+								<div class="catalogs-sidebar__filter-row">
+									<div class="catalogs-sidebar__filter-head">По производителю</div>
+									<div class="select-wrap">
+										<select>
+											<option value selected disabled hidden>-- Не выбрано --</option>
+											<option>check</option>
+										</select>
+									</div>
+								</div>
+								<div class="catalogs-sidebar__filter-row">
+									<div class="catalogs-sidebar__filter-head">По размеру</div>
+									<div class="select-wrap">
+										<select>
+											<option value selected disabled hidden>-- Не выбрано --</option>
+											<option>check</option>
+										</select>
+									</div>
+								</div>
+								<div class="catalogs-sidebar__filter-row">
+									<div class="catalogs-sidebar__filter-head">По цвету</div>
+									<div class="select-wrap">
+										<select>
+											<option value selected disabled hidden>-- Не выбрано --</option>
+											<option>check</option>
+										</select>
+									</div>
+								</div>
+								<button class="btn btn--gray w100">Отсортировать</button>
+							</div>
+						</div>
+						<div class="catalogs-sidebar__head top">Подразделы текущего каталога:</div>
+						<ul class="catalogs-sidebar__list">
+							<li><a href="#">Подраздел №1</a></li>
+							<li><a href="#">Подраздел №2</a></li>
+							<li><a href="#">Подраздел №3</a></li>
+							<li><a href="#">Подраздел №4</a></li>
+						</ul>
 					</div>
-					<p>Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки.</p>
-					<p>Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки. </p>
-				</div>
-				<div class="col-md-4">
-					<div class="cashback">
-						<div class="tl-center">
-							<img src="img/city-life.png" alt="alt">
+				</aside>
+				<div class="catalogs-content">
+					<h2 class="head-60 head-indent">Каталог</h2>
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="card card-catalog">
+								<div class="image">
+									<img src="img/catalog-1.jpg" alt="alt">
+									<div class="card__new">new</div>
+								</div>
+								<div class="card__content">
+									<h4 class="h4 head-18">Цветастое пальто в стиле PopUp</h4>
+									<div class="card__content-collect">New Collection Summer 2018</div>
+									<div class="card__content-size">
+										<span>Размеры: </span>
+										<span>40-46</span>
+									</div>
+									<div class="card__content-color d-flex align-items-center">
+										<span>Цвет:</span>
+										<span class="card__content-colors d-flex align-items-center">
+											<span class="gray"></span>
+											<span class="dark"></span>
+											<span class="blue"></span>
+										</span>
+									</div>
+									<div class="card__content-price d-flex align-items-center">
+										<div class="card__content-price-text">
+											Цвет:
+										</div>
+										<div class="card__content-price-price">
+											<span class="card__content-price__new">10 000 руб</span>
+											<span class="card__content-price__old">15 000 руб</span>
+										</div>
+									</div>
+									<div class="tl-center">
+										<a href="#" class="btn btn--gray w100">Просмотреть</a>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="head-60"><span>КэшБэк</span><br> с покупки</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="card card-catalog">
+								<div class="image">
+									<img src="img/catalog-1.jpg" alt="alt">
+									<div class="card__new">new</div>
+								</div>
+								<div class="card__content">
+									<h4 class="h4 head-18">Цветастое пальто в стиле PopUp</h4>
+									<div class="card__content-collect">New Collection Summer 2018</div>
+									<div class="card__content-size">
+										<span>Размеры: </span>
+										<span>40-46</span>
+									</div>
+									<div class="card__content-color d-flex align-items-center">
+										<span>Цвет:</span>
+										<span class="card__content-colors d-flex align-items-center">
+											<span class="gray"></span>
+											<span class="dark"></span>
+											<span class="blue"></span>
+										</span>
+									</div>
+									<div class="card__content-price d-flex align-items-center">
+										<div class="card__content-price-text">
+											Цвет:
+										</div>
+										<div class="card__content-price-price">
+											<span class="card__content-price__new">10 000 руб</span>
+											<span class="card__content-price__old">15 000 руб</span>
+										</div>
+									</div>
+									<div class="tl-center">
+										<a href="#" class="btn btn--gray w100">Просмотреть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="card card-catalog">
+								<div class="image">
+									<img src="img/catalog-1.jpg" alt="alt">
+									<div class="card__new">new</div>
+								</div>
+								<div class="card__content">
+									<h4 class="h4 head-18">Цветастое пальто в стиле PopUp</h4>
+									<div class="card__content-collect">New Collection Summer 2018</div>
+									<div class="card__content-size">
+										<span>Размеры: </span>
+										<span>40-46</span>
+									</div>
+									<div class="card__content-color d-flex align-items-center">
+										<span>Цвет:</span>
+										<span class="card__content-colors d-flex align-items-center">
+											<span class="gray"></span>
+											<span class="dark"></span>
+											<span class="blue"></span>
+										</span>
+									</div>
+									<div class="card__content-price d-flex align-items-center">
+										<div class="card__content-price-text">
+											Цвет:
+										</div>
+										<div class="card__content-price-price">
+											<span class="card__content-price__new">10 000 руб</span>
+											<span class="card__content-price__old">15 000 руб</span>
+										</div>
+									</div>
+									<div class="tl-center">
+										<a href="#" class="btn btn--gray w100">Просмотреть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="card card-catalog">
+								<div class="image">
+									<img src="img/catalog-1.jpg" alt="alt">
+									<div class="card__new">new</div>
+								</div>
+								<div class="card__content">
+									<h4 class="h4 head-18">Цветастое пальто в стиле PopUp</h4>
+									<div class="card__content-collect">New Collection Summer 2018</div>
+									<div class="card__content-size">
+										<span>Размеры: </span>
+										<span>40-46</span>
+									</div>
+									<div class="card__content-color d-flex align-items-center">
+										<span>Цвет:</span>
+										<span class="card__content-colors d-flex align-items-center">
+											<span class="gray"></span>
+											<span class="dark"></span>
+											<span class="blue"></span>
+										</span>
+									</div>
+									<div class="card__content-price d-flex align-items-center">
+										<div class="card__content-price-text">
+											Цвет:
+										</div>
+										<div class="card__content-price-price">
+											<span class="card__content-price__new">10 000 руб</span>
+											<span class="card__content-price__old">15 000 руб</span>
+										</div>
+									</div>
+									<div class="tl-center">
+										<a href="#" class="btn btn--gray w100">Просмотреть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="card card-catalog">
+								<div class="image">
+									<img src="img/catalog-1.jpg" alt="alt">
+									<div class="card__new">new</div>
+								</div>
+								<div class="card__content">
+									<h4 class="h4 head-18">Цветастое пальто в стиле PopUp</h4>
+									<div class="card__content-collect">New Collection Summer 2018</div>
+									<div class="card__content-size">
+										<span>Размеры: </span>
+										<span>40-46</span>
+									</div>
+									<div class="card__content-color d-flex align-items-center">
+										<span>Цвет:</span>
+										<span class="card__content-colors d-flex align-items-center">
+											<span class="gray"></span>
+											<span class="dark"></span>
+											<span class="blue"></span>
+										</span>
+									</div>
+									<div class="card__content-price d-flex align-items-center">
+										<div class="card__content-price-text">
+											Цвет:
+										</div>
+										<div class="card__content-price-price">
+											<span class="card__content-price__new">10 000 руб</span>
+											<span class="card__content-price__old">15 000 руб</span>
+										</div>
+									</div>
+									<div class="tl-center">
+										<a href="#" class="btn btn--gray w100">Просмотреть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="card card-catalog">
+								<div class="image">
+									<img src="img/catalog-1.jpg" alt="alt">
+									<div class="card__new">new</div>
+								</div>
+								<div class="card__content">
+									<h4 class="h4 head-18">Цветастое пальто в стиле PopUp</h4>
+									<div class="card__content-collect">New Collection Summer 2018</div>
+									<div class="card__content-size">
+										<span>Размеры: </span>
+										<span>40-46</span>
+									</div>
+									<div class="card__content-color d-flex align-items-center">
+										<span>Цвет:</span>
+										<span class="card__content-colors d-flex align-items-center">
+											<span class="gray"></span>
+											<span class="dark"></span>
+											<span class="blue"></span>
+										</span>
+									</div>
+									<div class="card__content-price d-flex align-items-center">
+										<div class="card__content-price-text">
+											Цвет:
+										</div>
+										<div class="card__content-price-price">
+											<span class="card__content-price__new">10 000 руб</span>
+											<span class="card__content-price__old">15 000 руб</span>
+										</div>
+									</div>
+									<div class="tl-center">
+										<a href="#" class="btn btn--gray w100">Просмотреть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="card card-catalog">
+								<div class="image">
+									<img src="img/catalog-1.jpg" alt="alt">
+									<div class="card__new">new</div>
+								</div>
+								<div class="card__content">
+									<h4 class="h4 head-18">Цветастое пальто в стиле PopUp</h4>
+									<div class="card__content-collect">New Collection Summer 2018</div>
+									<div class="card__content-size">
+										<span>Размеры: </span>
+										<span>40-46</span>
+									</div>
+									<div class="card__content-color d-flex align-items-center">
+										<span>Цвет:</span>
+										<span class="card__content-colors d-flex align-items-center">
+											<span class="gray"></span>
+											<span class="dark"></span>
+											<span class="blue"></span>
+										</span>
+									</div>
+									<div class="card__content-price d-flex align-items-center">
+										<div class="card__content-price-text">
+											Цвет:
+										</div>
+										<div class="card__content-price-price">
+											<span class="card__content-price__new">10 000 руб</span>
+											<span class="card__content-price__old">15 000 руб</span>
+										</div>
+									</div>
+									<div class="tl-center">
+										<a href="#" class="btn btn--gray w100">Просмотреть</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="s-content-grid">
-				<div class="row s-content-grid__row">
-					<a href="#" class="col-md-6">
-						<div class="s-content-item">
-							<div class="s-content-item__img image">
-								<img src="img/grid-1.jpg" alt="alt">
-							</div>
-						</div>
-					</a>
-					<a href="#" class="col-md-6">
-						<div class="s-content-item">
-							<div class="s-content-item__img image">
-								<img src="img/grid-2.jpg" alt="alt">
-							</div>
-							<h2 class="head-48 tl-center pt-15">Специальные<br> предложения</h2>
-						</div>
-					</a>
-				</div>
-				<div class="row s-content-grid__row">
-					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item--long">
-							<h2 class="s-content-item-head head-60">
-								<span>Рас</span><br> прод <br>- ажа
-							</h2>
-						</div>
-					</a>
-					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item--left s-content-item--half">
-							<h2 class="head-60 goods-day tl-right">Товар <span>месяца</span></h2>
-						</div>
-						<div class="s-content-item s-content-item--right s-content-item--half">
-							<h2 class="head-60 goods-day">Товар <span>дня</span></h2>
-						</div>
-					</a>
-				</div>
-				<div class="s-banner__slider s-content-grid__row">
-					<a href="#" class="s-main__slide image">
-						<img src="img/sale-1.jpg" alt="alt">
-					</a>
-					<a href="#" class="s-main__slide image">
-						<img src="img/sale-2.jpg" alt="alt">
-					</a>
-				</div>
-				<div class="row">
-					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item-720">
-							<div class="s-content-item__img image">
-								<img src="img/grid-6.jpg" alt="alt">
-							</div>
-							<div class="s-content-item__head head-48">Осенние комплекты</div>
-						</div>
-					</a>
-					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item-720">
-							<div class="s-content-item__img image">
-								<img src="img/grid-7.jpg" alt="alt">
-							</div>
-							<div class="s-content-item__head head-48">Одежда для женщин</div>
-						</div>
-					</a>
+					<ul class="pagination">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<section class="s-footer">
-		<div class="s-footer__slider">
-			<div class="s-footer__slide image">
-				<img src="img/instagram.png" alt="" class="s-footer__slide-img">
-			</div>
-			<div class="s-footer__slide image">
-				<img src="img/insgram-bg.jpg" alt="alt" class="s-footer__slide-bg">
-				<img src="img/instagram.png" alt="" class="s-footer__slide-img">
-			</div>
-		</div>
-	</section>
-
-	<footer class="footer footer--main">
+	<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-sm-6">
@@ -481,7 +696,7 @@
 	<div class="modal modal-registr mfp-hide mfp-with-anim" id="login">
 		<img src="img/modal-close.png" alt="alt" class="modal__close">
 		<div class="modal__head tl-center head-48">Вход на сайт</div>
-		<form action="/" class="modal-form">
+		<form action="/" class="modal-form form">
 			<div class="modal-form__row">
 				<input type="text" class="modal-form__input" placeholder="Фамилия">
 			</div>
