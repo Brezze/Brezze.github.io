@@ -1,8 +1,24 @@
 $(function() {
 
-	// ACCORDION
+	// ZOOM 
 
-	// $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+	$('.zoom').elevateZoom();
+
+	// COLORS CHOOSE
+
+	$('.catalog-content__colors-block span').click(function(){
+    	$('.catalog-content__colors-block span.active').removeClass('active');
+    	$(this).addClass('active');
+    })
+
+    // SIZES CHOOSE
+
+    $('.catalog-content__sizes-block span').click(function(){
+    	$('.catalog-content__sizes-block span.active').removeClass('active');
+    	$(this).addClass('active');
+    })
+
+	// ACCORDION
 
     $('.accordion a').click(function(j) {
         var dropDown = $(this).closest('li').find('.drop');
@@ -21,7 +37,8 @@ $(function() {
         j.preventDefault();
     });
 
-    // table accordion
+    // TABLE ACCORDION
+
 	    $(".lk-table tr.view").on("click", function(){
 	    if($(this).hasClass("open")) {
 	      $(this).removeClass("open").next(".fold").removeClass("open");
@@ -143,7 +160,7 @@ $(function() {
 
 	$('.lookbook-slider-first').slick({
 		rows: false,
-		arrows: false,
+		arrows: true,
 		dots: true,
 	})
 
@@ -152,8 +169,41 @@ $(function() {
 		dots: true,
 	})
 
+	 $('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  rows: false,
+	  dots: true,
+	  asNavFor: '.slider-nav'
+	});
+
+	$('.slider-nav').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  focusOnSelect: true,
+	  vertical: true,
+	  arrows: false,
+	  rows: false,
+	  verticalSwiping: true,
+	  responsive: [
+	    {
+	      breakpoint: 767,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1,
+	        vertical: false,
+	        verticalSwiping: false,
+	      }
+	    },
+	  ]
+	});
+
 });
 
+// RANGE SLIDER
 
 var skipSlider = document.getElementById('skipstep');
 
