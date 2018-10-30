@@ -11,12 +11,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
+
 	
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
@@ -306,10 +301,10 @@
 											<img src="img/cart-1.jpg" alt="alt">
 										</div>
 										<div class="cart-table__content-info">
-											<div class="card__content-size">
+											<a href="#" class="card__content-name">
 												<span>Название:</span>
 												<span>(арт 659888)</span>
-											</div>
+											</a>
 											<div class="card__content-color d-flex align-items-center">
 												<span>Цвет:</span>
 												<span class="card__content-colors d-flex align-items-center">
@@ -325,9 +320,12 @@
 									</div>
 								</td>
 								<td>10 000 руб.</td>
-								<td>
-									<span class="cart-table__count">2 шт</span>
-									<span class="cart-table__count-arrow"></span>
+								<td class="cart-counter">
+									<span class="cart-table__count cart-table__count-arrow up add"></span>
+									<div class="wrap">
+										<input type="text" name="" readonly class="cart-table__count cart-table__count-text">
+									</div>
+									<span class="cart-table__count cart-table__count-arrow down minus"></span>
 								</td>
 							</tr>
 							<tr>
@@ -337,10 +335,10 @@
 											<img src="img/catalog-1.jpg" alt="alt">
 										</div>
 										<div class="cart-table__content-info">
-											<div class="card__content-size">
+											<a href="#" class="card__content-name">
 												<span>Название:</span>
 												<span>(арт 659888)</span>
-											</div>
+											</a>
 											<div class="card__content-color d-flex align-items-center">
 												<span>Цвет:</span>
 												<span class="card__content-colors d-flex align-items-center">
@@ -356,9 +354,12 @@
 									</div>
 								</td>
 								<td>10 000 руб.</td>
-								<td>
-									<span class="cart-table__count">2 шт</span>
-									<span class="cart-table__count-arrow"></span>
+								<td class="cart-counter">
+									<span class="cart-table__count cart-table__count-arrow up add"></span>
+									<div class="wrap">
+										<input type="text" name="" readonly class="cart-table__count cart-table__count-text">
+									</div>
+									<span class="cart-table__count cart-table__count-arrow down minus"></span>
 								</td>
 							</tr>
 						</table>
@@ -493,6 +494,7 @@
 	<!-- Custom HTML -->
 
 	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 </html>

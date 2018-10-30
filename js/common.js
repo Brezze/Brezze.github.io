@@ -1,5 +1,19 @@
 $(function() {
 
+	$('.lk__change').click(function(){
+  
+	  $(this).siblings().find('.contacts-content__bold').prop('readonly', false);
+	  $(this).siblings().find('.contacts-content__bold').addClass('active');
+	  
+	});
+
+	$('.save').click(function(){
+	  
+	  $('.contacts-content__bold.active').prop('readonly', true).removeClass('active');
+	  
+	});
+
+
 	// ZOOM 
 
 	$('.zoom').elevateZoom();
@@ -72,9 +86,11 @@ $(function() {
 		$('.main-nav').toggleClass('open');
 	})
 
-	$('#filterToggler').click(function(){
-		$('.catalogs-sidebar__wrap').slideToggle();
-	})
+	if ($(window).width() < 992) {
+	   $('#filterToggler').click(function(){
+			$('.catalogs-sidebar__wrap').slideToggle();
+		})
+	}
 
 	// SEARCH HEADER
 
@@ -203,27 +219,15 @@ $(function() {
 
 });
 
-// RANGE SLIDER
+// CART COUNTER
 
-var skipSlider = document.getElementById('skipstep');
+$(".cart-counter input").val("1 шт");
 
-noUiSlider.create(skipSlider, {
-	step: 1000,
-    range: {
-        'min': 0,
-        'max': 100000
-    },
-    start: [0, 100000],
-	format: wNumb({
-	    decimals: 0,
-	})
-});
-
-var skipValues = [
-    document.getElementById('skip-value-lower'),
-    document.getElementById('skip-value-upper')
-];
-
-skipSlider.noUiSlider.on('update', function (values, handle) {
-    skipValues[handle].innerHTML = values[handle];
+$(".cart-counter .cart-table__count-arrow").click(function() {
+  var $input = $(this).siblings().find("input");
+  var val = +$input.val().replace("шт", "");
+  if ($(this).hasClass('add'))
+    $(this).siblings().find("input").val(Math.round((val + 1)*10)/10+' шт');
+  else if (val >= 1)
+    $(this).siblings().find("input").val(Math.round((val - 1)*10)/10+' шт');
 });
