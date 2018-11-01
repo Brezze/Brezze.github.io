@@ -30,20 +30,16 @@
 				<div class="search">
 					<form action="/" class="search__form" id="search">
 						<input type="text" placeholder="Поиск">
-						<!-- <div class="search__icon">
-							<img src="img/search.png" alt="alt" class="search__icon--black">
-							<img src="img/search-white.png" alt="alt" class="search__icon--white">
-						</div> -->
 					</form>
 					<div class="search__icon" form="search">
 						<img src="img/search.png" alt="alt" class="search__icon--black">
 						<img src="img/search-white.png" alt="alt" class="search__icon--white">
 					</div>
 				</div>
-				<a href="#registr" class="user" data-effect="mfp-zoom-out">
+				<a href="#login" class="user" data-effect="mfp-zoom-out">
 					<span>Войти</span>
 				</a>
-				<a href="#login" class="cart cart--header" data-effect="mfp-zoom-out">
+				<a href="#" class="cart cart--header">
 					<span class="cart-text">Корзина</span>
 					<span class="cart-count">(0)</span>
 				</a>
@@ -305,12 +301,12 @@
 					<p>Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки. </p>
 				</div>
 				<div class="col-md-4">
-					<div class="cashback">
+					<a href="#" class="cashback">
 						<div class="tl-center">
 							<img src="img/city-life.png" alt="alt">
 						</div>
 						<div class="head-60"><span>КэшБэк</span><br> с покупки</div>
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="s-content-grid">
@@ -323,28 +319,34 @@
 						</div>
 					</a>
 					<a href="#" class="col-md-6">
-						<div class="s-content-item">
+						<div class="s-content-item s-content-item--bot">
 							<div class="s-content-item__img image">
 								<img src="img/grid-2.jpg" alt="alt">
 							</div>
-							<h2 class="head-48 tl-center pt-15">Специальные<br> предложения</h2>
+							<div class="tl-center linked">
+								<h2 class="head-48 anim tl-center pt-15">Специальные<br> предложения</h2>
+							</div>
 						</div>
 					</a>
 				</div>
 				<div class="row s-content-grid__row">
 					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item--long">
-							<h2 class="s-content-item-head head-60">
-								<span>Рас</span><br> прод <br>- ажа
-							</h2>
+						<div class="s-content-item">
+							<div class="s-content-item--long">
+								<h2 class="s-content-item-head head-60">
+									<span>Рас</span><br> прод <br>- ажа
+								</h2>
+							</div>
 						</div>
 					</a>
 					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item--left s-content-item--half">
-							<h2 class="head-60 goods-day tl-right">Товар <span>месяца</span></h2>
+						<div class="s-content-item half">
+							<div class="s-content-item--left s-content-item--half"></div>
+							<h2 class="head-60 goods-day goods-day--left tl-right">Товар <span>месяца</span></h2>
 						</div>
-						<div class="s-content-item s-content-item--right s-content-item--half">
-							<h2 class="head-60 goods-day">Товар <span>дня</span></h2>
+						<div class="s-content-item half">
+							<h2 class="head-60 goods-day goods-day--right">Товар <span>дня</span></h2>
+							<div class="s-content-item--right s-content-item--half"></div>
 						</div>
 					</a>
 				</div>
@@ -362,7 +364,9 @@
 							<div class="s-content-item__img image">
 								<img src="img/grid-6.jpg" alt="alt">
 							</div>
-							<div class="s-content-item__head head-48">Осенние комплекты</div>
+							<div class="tl-center linked">
+								<div class="s-content-item__head anim head-48 ">Осенние комплекты</div>
+							</div>
 						</div>
 					</a>
 					<a href="#" class="col-md-6">
@@ -370,7 +374,9 @@
 							<div class="s-content-item__img image">
 								<img src="img/grid-7.jpg" alt="alt">
 							</div>
-							<div class="s-content-item__head head-48">Одежда для женщин</div>
+							<div class="tl-center linked">
+								<div class="s-content-item__head anim head-48">Одежда для женщин</div>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -446,7 +452,7 @@
 
 	<!-- MODAL REGISTRATION -->
 
-	<div class="modal modal-registr mfp-hide mfp-with-anim" id="registr">
+	<div class="modal form modal-registr mfp-hide mfp-with-anim" id="registr">
 		<img src="img/modal-close.png" alt="alt" class="modal__close">
 		<div class="modal__head tl-center head-48">Регистрация</div>
 		<form action="/" class="modal-form">
@@ -473,7 +479,7 @@
 
 	<!-- MODAL LOGIN -->
 
-	<div class="modal modal-registr mfp-hide mfp-with-anim" id="login">
+	<div class="modal form modal-registr mfp-hide mfp-with-anim" id="login">
 		<img src="img/modal-close.png" alt="alt" class="modal__close">
 		<div class="modal__head tl-center head-48">Вход на сайт</div>
 		<form action="/" class="modal-form">
@@ -491,7 +497,7 @@
 				<a href="#" class="modal-form__pass">Забыли пароль</a>
 			</div>
 			<div class="d-md-flex modal-form__nav">
-				<button class="btn btn--trans">Регистрация</button>
+				<a href="#registr" class="btn btn--trans btn-registr" data-effect="mfp-zoom-out">Регистрация</a>
 				<button class="btn btn--black btn--300">Войти</button>
 			</div>
 		</form>

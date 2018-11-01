@@ -127,7 +127,7 @@ $(function() {
 	  midClick: true
 	});
 
-	$('.cart').magnificPopup({
+	$('.btn-registr').magnificPopup({
 	  type:'inline',
 	  removalDelay: 500, 
 	  callbacks: {
@@ -148,7 +148,10 @@ $(function() {
 		rows: false,
 		arrows: false,
 		dots: true,
-		useTransform: false 
+		useTransform: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		pauseOnHover: false,
 	})
 
 	$('.style-slider').slick({
@@ -164,14 +167,20 @@ $(function() {
 		rows: false,
 		arrows: false,
 		dots: true,
-		useTransform: false 
+		useTransform: false,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		pauseOnHover: false,
 	})
 
 	$('.s-banner__slider').slick({
 		rows: false,
 		arrows: false,
 		dots: true,
-		useTransform: false 
+		useTransform: false,
+		autoplay: true,
+		autoplaySpeed: 3000, 
+		pauseOnHover: false,
 	})
 
 	$('.lookbook-slider-first').slick({

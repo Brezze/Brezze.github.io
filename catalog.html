@@ -30,20 +30,16 @@
 				<div class="search">
 					<form action="/" class="search__form" id="search">
 						<input type="text" placeholder="Поиск">
-						<!-- <div class="search__icon">
-							<img src="img/search.png" alt="alt" class="search__icon--black">
-							<img src="img/search-white.png" alt="alt" class="search__icon--white">
-						</div> -->
 					</form>
 					<div class="search__icon" form="search">
 						<img src="img/search.png" alt="alt" class="search__icon--black">
 						<img src="img/search-white.png" alt="alt" class="search__icon--white">
 					</div>
 				</div>
-				<a href="#registr" class="user" data-effect="mfp-zoom-out">
+				<a href="#login" class="user" data-effect="mfp-zoom-out">
 					<span>Войти</span>
 				</a>
-				<a href="#login" class="cart cart--header" data-effect="mfp-zoom-out">
+				<a href="#" class="cart cart--header">
 					<span class="cart-text">Корзина</span>
 					<span class="cart-count">(0)</span>
 				</a>
@@ -688,10 +684,10 @@
 
 	<!-- MODAL LOGIN -->
 
-	<div class="modal modal-registr mfp-hide mfp-with-anim" id="login">
+	<div class="modal form modal-registr mfp-hide mfp-with-anim" id="login">
 		<img src="img/modal-close.png" alt="alt" class="modal__close">
 		<div class="modal__head tl-center head-48">Вход на сайт</div>
-		<form action="/" class="modal-form form">
+		<form action="/" class="modal-form">
 			<div class="modal-form__row">
 				<input type="text" class="modal-form__input" placeholder="Фамилия">
 			</div>
@@ -706,7 +702,7 @@
 				<a href="#" class="modal-form__pass">Забыли пароль</a>
 			</div>
 			<div class="d-md-flex modal-form__nav">
-				<button class="btn btn--trans">Регистрация</button>
+				<a href="#registr" class="btn btn--trans btn-registr" data-effect="mfp-zoom-out">Регистрация</a>
 				<button class="btn btn--black btn--300">Войти</button>
 			</div>
 		</form>
