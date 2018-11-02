@@ -138,6 +138,17 @@ $(function() {
 	  midClick: true
 	});
 
+	$('.modal-form__pass').magnificPopup({
+	  type:'inline',
+	  removalDelay: 500, 
+	  callbacks: {
+	    beforeOpen: function() {
+	       this.st.mainClass = this.st.el.attr('data-effect');
+	    }
+	  },
+	  midClick: true
+	});
+
 	$('.modal__close').on( "click", function() {
 	  $.magnificPopup.close();
 	});
