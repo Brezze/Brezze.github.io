@@ -12,517 +12,1493 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
 	
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
-
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
 
-	<header class="header header--main">
-		<div class="container">
-			<div class="header-top">
-				<div class="search">
-					<form action="/" class="search__form" id="search">
-						<input type="text" placeholder="Поиск">
-					</form>
-					<div class="search__icon" form="search">
-						<img src="img/search.png" alt="alt" class="search__icon--black">
-						<img src="img/search-white.png" alt="alt" class="search__icon--white">
-					</div>
-				</div>
-				<a href="#login" class="user" data-effect="mfp-zoom-out">
-					<span>Войти</span>
-				</a>
-				<a href="#" class="cart cart--header">
-					<span class="cart-text">Корзина</span>
-					<span class="cart-count">(0)</span>
-				</a>
-			</div>
-			<div class="header-middle">
-				<div class="hamburger hamburger--emphatic">
-					<div class="hamburger-box">
-						<div class="hamburger-inner"></div>
-					</div>
-				</div>
-				<a href="#" class="logo">
-					<img src="img/logo.png" alt="alt">
-				</a>
-			</div>
+	<header class="header">
+		<div class="header-container">
+			<a href="#" class="logo">
+				<img src="img/logo.png" alt="alt">
+			</a>
 			<nav class="main-nav">
-				<ul class="main-list linked">
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Новинки</a></li>
-					<li><a href="#">Умная одежда</a></li>
-					<li class="has-dropdown">
-						<a href="#">Каталог одежды</a>
-						<div class="dropdown">
-							<div class="container">
-								<ul class="lvl2 linked">
-									<li class="has-dropdown">
-										<a href="#">Женская одежда</a>
-										<div class="dropdown-catalog">
-											<div class="container">
-												<div class="row">
-													<div class="col-md-6">
-														<div class="dropdown-catalog__logo">
-															<img src="img/logo-catalog-1.png" alt="alt">
-														</div>
-														<div class="row">
-															<div class="col-lg-6">
-																<div class="image">
-																	<img src="img/menu-pic-1.jpg" alt="alt">
-																</div>
-															</div>
-															<div class="col-lg-6">
-																<ul class="dropdown-catalog__list linked">
-																	<li><a href="#">Платья</a></li>
-																	<li><a href="#">Блузы и рубашки</a></li>
-																	<li><a href="#">Костюмы и комплекты</a></li>
-																	<li><a href="#">Жакеты и жилеты</a></li>
-																	<li><a href="#">Трикотаж</a></li>
-																	<li><a href="#">Брюки</a></li>
-																	<li><a href="#">Юбки</a></li>
-																	<li><a href="#">Деловой гардероб</a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="dropdown-catalog__logo">
-															<img src="img/logo-catalog-2.png" alt="alt">
-														</div>
-														<div class="row">
-															<div class="col-lg-6">
-																<div class="image">
-																	<img src="img/menu-pic-2.jpg" alt="alt">
-																</div>
-															</div>
-															<div class="col-lg-6">
-																<ul class="dropdown-catalog__list linked">
-																	<li><a href="#">Платья</a></li>
-																	<li><a href="#">Блузы и рубашки</a></li>
-																	<li><a href="#">Костюмы и комплекты</a></li>
-																	<li><a href="#">Жакеты и жилеты</a></li>
-																	<li><a href="#">Трикотаж</a></li>
-																	<li><a href="#">Брюки</a></li>
-																	<li><a href="#">Юбки</a></li>
-																	<li><a href="#">Деловой гардероб</a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="has-dropdown">
-										<a href="#">Мужская одежда</a>
-										<div class="dropdown-catalog">
-											<div class="container">
-												<div class="row">
-													<div class="col-md-6">
-														<div class="dropdown-catalog__logo">
-															<img src="img/logo-catalog-1.png" alt="alt">
-														</div>
-														<div class="row">
-															<div class="col-lg-6">
-																<div class="image">
-																	<img src="img/menu-pic-1.jpg" alt="alt">
-																</div>
-															</div>
-															<div class="col-lg-6">
-																<ul class="dropdown-catalog__list linked">
-																	<li><a href="#">Платья</a></li>
-																	<li><a href="#">Блузы и рубашки</a></li>
-																	<li><a href="#">Костюмы и комплекты</a></li>
-																	<li><a href="#">Жакеты и жилеты</a></li>
-																	<li><a href="#">Трикотаж</a></li>
-																	<li><a href="#">Брюки</a></li>
-																	<li><a href="#">Юбки</a></li>
-																	<li><a href="#">Деловой гардероб</a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="dropdown-catalog__logo">
-															<img src="img/logo-catalog-2.png" alt="alt">
-														</div>
-														<div class="row">
-															<div class="col-lg-6">
-																<div class="image">
-																	<img src="img/menu-pic-2.jpg" alt="alt">
-																</div>
-															</div>
-															<div class="col-lg-6">
-																<ul class="dropdown-catalog__list linked">
-																	<li><a href="#">Платья</a></li>
-																	<li><a href="#">Блузы и рубашки</a></li>
-																	<li><a href="#">Костюмы и комплекты</a></li>
-																	<li><a href="#">Жакеты и жилеты</a></li>
-																	<li><a href="#">Трикотаж</a></li>
-																	<li><a href="#">Брюки</a></li>
-																	<li><a href="#">Юбки</a></li>
-																	<li><a href="#">Деловой гардероб</a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<a href="#">Детская одежда</a>
-									</li>
-									<li>
-										<a href="#">Одежда для животных</a>
-									</li>
-									<li>
-										<a href="#">Аксессуары для дома</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="has-dropdown">
-						<a href="#">Аксессуары</a>
-						<div class="dropdown">
-							<div class="container">
-								<ul class="lvl2 linked">
-									<li class="has-dropdown">
-										<a href="#">Женская одежда</a>
-										<div class="dropdown-catalog">
-											<div class="container">
-												<div class="row">
-													<div class="col-md-6">
-														<div class="dropdown-catalog__logo">
-															<img src="img/logo-catalog-1.png" alt="alt">
-														</div>
-														<div class="row">
-															<div class="col-lg-6">
-																<div class="image">
-																	<img src="img/menu-pic-1.jpg" alt="alt">
-																</div>
-															</div>
-															<div class="col-lg-6">
-																<ul class="dropdown-catalog__list linked">
-																	<li><a href="#">Платья</a></li>
-																	<li><a href="#">Блузы и рубашки</a></li>
-																	<li><a href="#">Костюмы и комплекты</a></li>
-																	<li><a href="#">Жакеты и жилеты</a></li>
-																	<li><a href="#">Трикотаж</a></li>
-																	<li><a href="#">Брюки</a></li>
-																	<li><a href="#">Юбки</a></li>
-																	<li><a href="#">Деловой гардероб</a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="dropdown-catalog__logo">
-															<img src="img/logo-catalog-2.png" alt="alt">
-														</div>
-														<div class="row">
-															<div class="col-lg-6">
-																<div class="image">
-																	<img src="img/menu-pic-2.jpg" alt="alt">
-																</div>
-															</div>
-															<div class="col-lg-6">
-																<ul class="dropdown-catalog__list linked">
-																	<li><a href="#">Платья</a></li>
-																	<li><a href="#">Блузы и рубашки</a></li>
-																	<li><a href="#">Костюмы и комплекты</a></li>
-																	<li><a href="#">Жакеты и жилеты</a></li>
-																	<li><a href="#">Трикотаж</a></li>
-																	<li><a href="#">Брюки</a></li>
-																	<li><a href="#">Юбки</a></li>
-																	<li><a href="#">Деловой гардероб</a></li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<a href="#">Мужская одежда</a>
-									</li>
-									<li>
-										<a href="#">Детская одежда</a>
-									</li>
-									<li>
-										<a href="#">Одежда для животных</a>
-									</li>
-									<li>
-										<a href="#">Аксессуары для дома</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li><a href="#">Обувь</a></li>
-					<li><a href="#">Lookbook</a></li>
-					<li><a href="#">Sale</a></li>
-					<li><a href="#">Контакты</a></li>
+				<ul class="main-list">
+					<li><a href="#">главная</a></li>
+					<li><a href="#">букмекеры</a></li>
+					<li><a href="#">бонусы</a></li>
+					<li><a href="#">рейтинг бк</a></li>
+					<li><a href="#">mobile бк</a></li>
+					<li><a href="#">ставки</a></li>
+					<li><a href="#">стратегии</a></li>
+					<li><a href="#">справочник</a></li>
+					<li><a href="#">о нас</a></li>
 				</ul>
 			</nav>
+			<form action="/" class="search">
+				<div class="search__btn"><img src="img/search_icon.png" alt="alt"></div>
+				<div class="search-input">
+					<input type="text" placeholder="Введите слово для поиска...">
+				</div>
+			</form>
+			<div class="hamburger hamburger--emphatic">
+                <span class="hamburger-box">
+                   <span class="hamburger-inner"></span>
+                </span>
+            </div>
 		</div>
 	</header>
 
-	<section class="s-main">
-		<div class="s-main__slider">
-			<div class="s-main__slide image">
-				<img src="img/main-screen-1.jpg" alt="alt">
-			</div>
-			<div class="s-main__slide image">
-				<img src="img/main-screen-2.jpg" alt="alt">
+	<section class="s-content">
+		<div class="container">
+			<div class="s-content__wrap">
+				<aside class="s-content__left">
+					<div class="wrapper">
+					    <div class="tabs">
+					        <span class="tab">рубрики</span>
+					        <span class="tab">популярное</span>    
+					    </div>
+					    <div class="tab_content">
+					        <div class="tab_item">
+					        	<ul class="groups-list sidebar-item">
+					        		<li class="has-dropdown">
+					        			<a href="#">
+					        				<span>Чемпионаты</span>
+					        				<span class="groups-list__play"></span>
+					        			</a>
+					        			<ul class="dropdown">
+					        				<li>
+					        					<a href="#">Чемпионаты 1</a>
+					        				</li>
+					        				<li>
+					        					<a href="#">Чемпионаты 2</a>
+					        				</li>
+					        				<li>
+					        					<a href="#">Чемпионаты 3</a>
+					        				</li>
+					        			</ul>
+					        		</li>
+					        		<li class="has-dropdown">
+					        			<a href="#">
+					        				<span>Ставки на спорт</span>
+					        				<span class="groups-list__play"></span>
+					        			</a>
+					        			<ul class="dropdown">
+					        				<li>
+					        					<a href="#">Чемпионаты 1</a>
+					        				</li>
+					        				<li>
+					        					<a href="#">Чемпионаты 2</a>
+					        				</li>
+					        				<li>
+					        					<a href="#">Чемпионаты 3</a>
+					        				</li>
+					        			</ul>
+					        		</li>
+					        		<li>
+					        			<a href="#">
+					        				<span>О букмекерах</span>
+					        				<span class="groups-list__play"></span>
+					        			</a>
+					        		</li>
+					        		<li>
+					        			<a href="#">
+					        				<span>Бонусы и акции</span>
+					        				<span class="groups-list__play"></span>
+					        			</a>
+					        		</li>
+					        		<li>
+					        			<a href="#">
+					        				<span>Стратегии ставок</span>
+					        				<span class="groups-list__play"></span>
+					        			</a>
+					        		</li>
+					        		<li>
+					        			<a href="#">
+					        				<span>Рейтинг БК</span>
+					        				<span class="groups-list__play"></span>
+					        			</a>
+					        		</li>
+					        		<li>
+					        			<a href="#">
+					        				<span>Обзор БК</span>
+					        				<span class="groups-list__play"></span>
+					        			</a>
+					        		</li>
+					        		<li>
+					        			<a href="#">
+					        				<span>Справочник</span>
+					        				<span class="groups-list__play"></span>
+					        			</a>
+					        		</li>
+					        	</ul>
+					        </div>
+					        <div class="tab_item">
+					        	<div class="sidebar-item sidebar-block">
+					        		<div class="popular-categories">
+						        		<div class="popular-categories__item">
+						        			<a href="#" class="popular-categories__head">Как выигрывать на ставках в букмекерской конторе ?</a>
+						        			<div class="d-flex justify-content-end">
+						        				<div class="review">
+						        					<a href="#" class="review__item">
+						        						<img src="img/eye_icon.png" alt="alt">
+						        						<span>21</span>
+						        					</a>
+						        					<a href="#" class="review__item">
+						        						<img src="img/icon_comment.png" alt="alt">
+						        						<span>21</span>
+						        					</a>
+						        				</div>
+						        			</div>
+						        		</div>
+						        		<div class="popular-categories__item">
+						        			<a href="#" class="popular-categories__head">Как выигрывать на ставках в букмекерской конторе ?</a>
+						        			<div class="d-flex justify-content-end">
+						        				<div class="review">
+						        					<a href="#" class="review__item">
+						        						<img src="img/eye_icon.png" alt="alt">
+						        						<span>21</span>
+						        					</a>
+						        					<a href="#" class="review__item">
+						        						<img src="img/icon_comment.png" alt="alt">
+						        						<span>21</span>
+						        					</a>
+						        				</div>
+						        			</div>
+						        		</div>
+						        		<div class="popular-categories__item">
+						        			<a href="#" class="popular-categories__head">Как выигрывать на ставках в букмекерской конторе ?</a>
+						        			<div class="d-flex justify-content-end">
+						        				<div class="review">
+						        					<a href="#" class="review__item">
+						        						<img src="img/eye_icon.png" alt="alt">
+						        						<span>21</span>
+						        					</a>
+						        					<a href="#" class="review__item">
+						        						<img src="img/icon_comment.png" alt="alt">
+						        						<span>21</span>
+						        					</a>
+						        				</div>
+						        			</div>
+						        		</div>
+					        		</div>
+					        	</div>
+					        </div>
+					    </div>
+					</div>
+					<div class="sidebar-item sidebar-block">
+		        		<div class="sidebar-block__head">
+		        			<h2 class="h3">кто ваш бк ?</h2>
+		        		</div>
+		        		<div class="sidebar-block__item">
+	        				<form action="/" class="form form-sidebar">
+	        					<div class="form-sidebar__row d-flex justify-content-between">
+	        						<select class="form-sidebar__select form-sidebar__select--round">
+	        							<option value="" hidden disabled selected>Выберите букмекера</option>
+	        							<option value="">1xStavka</option>
+	        							<option value="">Leon</option>
+	        							<option value="">Fonbet</option>
+	        							<option value="">Liga stavok</option>
+	        						</select>
+	        						<button class="btn btn--blue btn--select">ок</button>
+	        					</div>
+	        				</form>
+	        				<div class="image">
+	        					<img src="img/graphic.png" alt="alt">
+	        				</div>
+		        		</div>
+		        		<div class="sidebar-block__item">
+		        			<ul class="our-bk">
+		        				<li>
+		        					<span>1xStavka</span>
+		        					<span>3.6%</span>
+		        				</li>
+		        				<li>
+		        					<span>Leon</span>
+		        					<span>3.4%</span>
+		        				</li>
+		        				<li>
+		        					<span>Fonbet</span>
+		        					<span>1.7%</span>
+		        				</li>
+		        				<li>
+		        					<span>Liga stavok</span>
+		        					<span>1.6%</span>
+		        				</li>
+		        				<li>
+		        					<span>Parimatch</span>
+		        					<span>1.5%</span>
+		        				</li>
+		        				<li>
+		        					<span>Bet365</span>
+		        					<span>1.2%</span>
+		        				</li>
+		        				<li>
+		        					<span>Marathonbet</span>
+		        					<span>0.8%</span>
+		        				</li>
+		        				<li>
+		        					<span>10Bet</span>
+		        					<span>0.6%</span>
+		        				</li>
+		        				<li>
+		        					<span>Betfair</span>
+		        					<span>0.4%</span>
+		        				</li>
+		        				<li>
+		        					<span>William Hill</span>
+		        					<span>0.2%</span>
+		        				</li>
+		        				<li>
+		        					<span>MelBet</span>
+		        					<span>0.1%</span>
+		        				</li>
+		        				<li>
+		        					<span>Bwin</span>
+		        					<span>0.1%</span>
+		        				</li>
+		        			</ul>
+		        			<div class="our-bk__btn" id="loadMore">
+		        				<span class="our-bk__btn-toggle">+</span>
+		        				<span class="our-bk__btn-toggle active">-</span>
+		        			</div>
+		        		</div>
+		        		<div class="sidebar-block__item">
+	        				<div class="our-bk__total">Всего проголосовало <a href="#">4512</a></div>
+	        			</div>
+		        	</div>
+				</aside>
+				<div class="s-content__body">
+					<h1 class="h1">бесплатные прогнозы на футбол</h1>
+					<div class="bet">
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bet-row" data-loader="customLoaderName">
+							<div class="bet-item">
+								<div class="bet-image image">
+									<img src="img/bet-img.png" alt="alt">
+								</div>
+								<div class="bet-content">
+									<div class="bet-content__top">
+										<div class="bet-content__liga">Футбол. Английская Премьер-Лига.</div>
+										<a href="#" class="bet-content__name">Вэст Хэм - Ливерпуль</a>
+										<div class="bet-content__kef">
+											<span class="bet-content__kef-item">
+												Прогноз:
+												<span class="bet-content__kef-blue">Победа 1</span>
+											</span>
+											<span class="bet-content__kef-item">
+												Коэффициент:
+												<span class="bet-content__kef-blue">1.91</span>
+											</span>
+										</div>
+										<div class="bet-content__date">Начало события: 1 ноября в 21:45</div>
+									</div>
+									<div class="bet-content__bottom d-md-flex justify-content-between">
+										<div class="bet-content__bet">
+											<span>Проголосовало: За</span>
+											<span class="green">(420)</span>,
+											<span>Против</span>
+											<span class="red">(108)</span>
+										</div>
+										<div class="review">
+				        					<a href="#" class="review__item">
+				        						<img src="img/eye_icon.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        					<a href="#" class="review__item">
+				        						<img src="img/icon_comment.png" alt="alt">
+				        						<span>21</span>
+				        					</a>
+				        				</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bet-mobile">
+						<div class="bet-mobile__item">
+							<div class="bet-mobile__item-top">
+								<div class="bet-mobile__head">Манчестер Юнайтед - Реал Сосьедад</div>
+								<div class="bet-mobile__date">Прогноз на 11 февраля 2018</div>
+							</div>
+							<div class="bet-mobile__item-bottom">
+								<div class="bet-table">
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/time32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">08.02 в 21:45 МСК</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/prognoz32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">Обе забьют</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/tour32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">АПЛ</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/koef32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">1.91</div>
+									</div>
+								</div>
+								<div class="bet__more">Подробнее</div>
+							</div>
+							<div class="bet-content__bottom d-md-flex justify-content-between">
+								<div class="bet-content__bet">
+									<span>Проголосовало: За</span>
+									<span class="green">(420)</span>,
+									<span>Против</span>
+									<span class="red">(108)</span>
+								</div>
+								<div class="review">
+		        					<a href="#" class="review__item">
+		        						<img src="img/eye_icon.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        					<a href="#" class="review__item">
+		        						<img src="img/icon_comment.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        				</div>
+							</div>
+						</div>
+						<div class="bet-mobile__item">
+							<div class="bet-mobile__item-top">
+								<div class="bet-mobile__head">Манчестер Юнайтед - Реал Сосьедад</div>
+								<div class="bet-mobile__date">Прогноз на 11 февраля 2018</div>
+							</div>
+							<div class="bet-mobile__item-bottom">
+								<div class="bet-table">
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/time32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">08.02 в 21:45 МСК</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/prognoz32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">Обе забьют</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/tour32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">АПЛ</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/koef32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">1.91</div>
+									</div>
+								</div>
+								<div class="bet__more">Подробнее</div>
+							</div>
+							<div class="bet-content__bottom d-md-flex justify-content-between">
+								<div class="bet-content__bet">
+									<span>Проголосовало: За</span>
+									<span class="green">(420)</span>,
+									<span>Против</span>
+									<span class="red">(108)</span>
+								</div>
+								<div class="review">
+		        					<a href="#" class="review__item">
+		        						<img src="img/eye_icon.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        					<a href="#" class="review__item">
+		        						<img src="img/icon_comment.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        				</div>
+							</div>
+						</div>
+						<div class="bet-mobile__item">
+							<div class="bet-mobile__item-top">
+								<div class="bet-mobile__head">Манчестер Юнайтед - Реал Сосьедад</div>
+								<div class="bet-mobile__date">Прогноз на 11 февраля 2018</div>
+							</div>
+							<div class="bet-mobile__item-bottom">
+								<div class="bet-table">
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/time32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">08.02 в 21:45 МСК</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/prognoz32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">Обе забьют</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/tour32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">АПЛ</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/koef32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">1.91</div>
+									</div>
+								</div>
+								<div class="bet__more">Подробнее</div>
+							</div>
+							<div class="bet-content__bottom d-md-flex justify-content-between">
+								<div class="bet-content__bet">
+									<span>Проголосовало: За</span>
+									<span class="green">(420)</span>,
+									<span>Против</span>
+									<span class="red">(108)</span>
+								</div>
+								<div class="review">
+		        					<a href="#" class="review__item">
+		        						<img src="img/eye_icon.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        					<a href="#" class="review__item">
+		        						<img src="img/icon_comment.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        				</div>
+							</div>
+						</div>
+						<div class="bet-mobile__item">
+							<div class="bet-mobile__item-top">
+								<div class="bet-mobile__head">Манчестер Юнайтед - Реал Сосьедад</div>
+								<div class="bet-mobile__date">Прогноз на 11 февраля 2018</div>
+							</div>
+							<div class="bet-mobile__item-bottom">
+								<div class="bet-table">
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/time32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">08.02 в 21:45 МСК</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/prognoz32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">Обе забьют</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/tour32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">АПЛ</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/koef32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">1.91</div>
+									</div>
+								</div>
+								<div class="bet__more">Подробнее</div>
+							</div>
+							<div class="bet-content__bottom d-md-flex justify-content-between">
+								<div class="bet-content__bet">
+									<span>Проголосовало: За</span>
+									<span class="green">(420)</span>,
+									<span>Против</span>
+									<span class="red">(108)</span>
+								</div>
+								<div class="review">
+		        					<a href="#" class="review__item">
+		        						<img src="img/eye_icon.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        					<a href="#" class="review__item">
+		        						<img src="img/icon_comment.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        				</div>
+							</div>
+						</div>
+						<div class="bet-mobile__item">
+							<div class="bet-mobile__item-top">
+								<div class="bet-mobile__head">Манчестер Юнайтед - Реал Сосьедад</div>
+								<div class="bet-mobile__date">Прогноз на 11 февраля 2018</div>
+							</div>
+							<div class="bet-mobile__item-bottom">
+								<div class="bet-table">
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/time32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">08.02 в 21:45 МСК</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/prognoz32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">Обе забьют</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/tour32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">АПЛ</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/koef32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">1.91</div>
+									</div>
+								</div>
+								<div class="bet__more">Подробнее</div>
+							</div>
+							<div class="bet-content__bottom d-md-flex justify-content-between">
+								<div class="bet-content__bet">
+									<span>Проголосовало: За</span>
+									<span class="green">(420)</span>,
+									<span>Против</span>
+									<span class="red">(108)</span>
+								</div>
+								<div class="review">
+		        					<a href="#" class="review__item">
+		        						<img src="img/eye_icon.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        					<a href="#" class="review__item">
+		        						<img src="img/icon_comment.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        				</div>
+							</div>
+						</div>
+						<div class="bet-mobile__item">
+							<div class="bet-mobile__item-top">
+								<div class="bet-mobile__head">Манчестер Юнайтед - Реал Сосьедад</div>
+								<div class="bet-mobile__date">Прогноз на 11 февраля 2018</div>
+							</div>
+							<div class="bet-mobile__item-bottom">
+								<div class="bet-table">
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/time32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">08.02 в 21:45 МСК</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/prognoz32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">Обе забьют</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/tour32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">АПЛ</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/koef32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">1.91</div>
+									</div>
+								</div>
+								<div class="bet__more">Подробнее</div>
+							</div>
+							<div class="bet-content__bottom d-md-flex justify-content-between">
+								<div class="bet-content__bet">
+									<span>Проголосовало: За</span>
+									<span class="green">(420)</span>,
+									<span>Против</span>
+									<span class="red">(108)</span>
+								</div>
+								<div class="review">
+		        					<a href="#" class="review__item">
+		        						<img src="img/eye_icon.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        					<a href="#" class="review__item">
+		        						<img src="img/icon_comment.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        				</div>
+							</div>
+						</div>
+						<div class="bet-mobile__item">
+							<div class="bet-mobile__item-top">
+								<div class="bet-mobile__head">Манчестер Юнайтед - Реал Сосьедад</div>
+								<div class="bet-mobile__date">Прогноз на 11 февраля 2018</div>
+							</div>
+							<div class="bet-mobile__item-bottom">
+								<div class="bet-table">
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/time32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">08.02 в 21:45 МСК</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/prognoz32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">Обе забьют</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/tour32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">АПЛ</div>
+									</div>
+									<div class="bet-table__item">
+										<div class="bet-table__img">
+											<img src="img/koef32.png" alt="alt">
+										</div>
+										<div class="bet-table__text">1.91</div>
+									</div>
+								</div>
+								<div class="bet__more">Подробнее</div>
+							</div>
+							<div class="bet-content__bottom d-md-flex justify-content-between">
+								<div class="bet-content__bet">
+									<span>Проголосовало: За</span>
+									<span class="green">(420)</span>,
+									<span>Против</span>
+									<span class="red">(108)</span>
+								</div>
+								<div class="review">
+		        					<a href="#" class="review__item">
+		        						<img src="img/eye_icon.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        					<a href="#" class="review__item">
+		        						<img src="img/icon_comment.png" alt="alt">
+		        						<span>21</span>
+		        					</a>
+		        				</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<aside class="s-content__right">
+					<div class="sidebar-item sidebar-block">
+						<div class="sidebar-block__head">
+		        			<h2 class="h3">рейтинг БК</h2>
+		        		</div>	
+	        			<div class="rating-block">
+	        				<div class="rating">
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating-img">
+			        					<img src="img/bk-1.png" alt="alt">
+			        					<div class="rating-hidden">
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">надежность</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">функционал</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">коэфициенты</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">бонусы</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row">
+			        							<div class="rating-hidden__comment">Комментариев - <span>21</span></div>
+			        						</div>
+			        					</div>
+			        				</div>
+	        						<a href="#" class="rating-btn">
+	        							<span>перейти</span>
+	        						</a>
+	        					</div>
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating__rate d-flex justify-content-between align-items-center">
+	        							<img src="img/star_icon.png" alt="alt">
+	        							<div class="rating__rate-num">74</div>
+	        						</div>
+	        						<a href="#" class="rating__read">читать обзор</a>
+	        					</div>
+	        				</div>
+	        				<div class="rating">
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating-img">
+			        					<img src="img/bk-2.png" alt="alt">
+			        					<div class="rating-hidden">
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">надежность</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">функционал</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">коэфициенты</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">бонусы</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row">
+			        							<div class="rating-hidden__comment">Комментариев - <span>21</span></div>
+			        						</div>
+			        					</div>
+			        				</div>
+	        						<a href="#" class="rating-btn">
+	        							<span>перейти</span>
+	        						</a>
+	        					</div>
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating__rate d-flex justify-content-between align-items-center">
+	        							<img src="img/star_icon.png" alt="alt">
+	        							<div class="rating__rate-num">74</div>
+	        						</div>
+	        						<a href="#" class="rating__read">читать обзор</a>
+	        					</div>
+	        				</div>
+	        				<div class="rating">
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating-img">
+			        					<img src="img/bk-3.png" alt="alt">
+			        					<div class="rating-hidden">
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">надежность</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">функционал</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">коэфициенты</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">бонусы</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row">
+			        							<div class="rating-hidden__comment">Комментариев - <span>21</span></div>
+			        						</div>
+			        					</div>
+			        				</div>
+	        						<a href="#" class="rating-btn">
+	        							<span>перейти</span>
+	        						</a>
+	        					</div>
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating__rate d-flex justify-content-between align-items-center">
+	        							<img src="img/star_icon.png" alt="alt">
+	        							<div class="rating__rate-num">69</div>
+	        						</div>
+	        						<a href="#" class="rating__read">читать обзор</a>
+	        					</div>
+	        				</div>
+	        				<div class="rating">
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating-img">
+			        					<img src="img/bk-4.png" alt="alt">
+			        					<div class="rating-hidden">
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">надежность</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">функционал</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">коэфициенты</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">бонусы</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row">
+			        							<div class="rating-hidden__comment">Комментариев - <span>21</span></div>
+			        						</div>
+			        					</div>
+			        				</div>
+	        						<a href="#" class="rating-btn">
+	        							<span>перейти</span>
+	        						</a>
+	        					</div>
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating__rate d-flex justify-content-between align-items-center">
+	        							<img src="img/star_icon.png" alt="alt">
+	        							<div class="rating__rate-num">57</div>
+	        						</div>
+	        						<a href="#" class="rating__read">читать обзор</a>
+	        					</div>
+	        				</div>
+	        				<div class="rating">
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating-img">
+			        					<img src="img/bk-4.png" alt="alt">
+			        					<div class="rating-hidden">
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">надежность</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">функционал</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">коэфициенты</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row d-flex justify-content-between align-items-center">
+			        							<div class="rating-hidden__text">бонусы</div>
+			        							<div class="rating-hidden__num">38</div>
+			        						</div>
+			        						<div class="rating-hidden__row">
+			        							<div class="rating-hidden__comment">Комментариев - <span>21</span></div>
+			        						</div>
+			        					</div>
+			        				</div>
+	        						<a href="#" class="rating-btn">
+	        							<span>перейти</span>
+	        						</a>
+	        					</div>
+	        					<div class="rating-row d-flex align-items-center justify-content-between">
+	        						<div class="rating__rate d-flex justify-content-between align-items-center">
+	        							<img src="img/star_icon.png" alt="alt">
+	        							<div class="rating__rate-num">57</div>
+	        						</div>
+	        						<a href="#" class="rating__read">читать обзор</a>
+	        					</div>
+	        				</div>
+	        				<div class="rating__footer">
+	        					<div class="rating-more" id="loadMore2">
+			        				<span class="rating-more-toggle">+</span>
+			        				<span class="rating-more-toggle actives">-</span>
+			        			</div>
+			        			<div class="rating__showmore">Показать еще <a></a></div>
+	        				</div>
+	        			</div>
+					</div>
+					<div class="sidebar-item sidebar-block">
+						<div class="sidebar-block__head">
+		        			<h2 class="h3">оцените бк</h2>
+		        		</div>
+		        		<div class="reviews form form-sidebar">
+		        			<div class="reviews-top">
+		        				<div class="reviews-head">Рейтинг букмекеров зависит от Ваших оценок. Пожалуйста, дайте свою оценку:</div>
+		        				<div class="form-sidebar__row">
+	        						<select class="form-sidebar__select form-sidebar__select--round">
+	        							<option value="" hidden disabled selected>Выберите букмекера</option>
+	        							<option value="">1xStavka</option>
+	        							<option value="">Leon</option>
+	        							<option value="">Fonbet</option>
+	        							<option value="">Liga stavok</option>
+	        						</select>
+	        					</div>
+	        					<div class="form-sidebar__row">
+	        						<input type="text" class="form-sidebar__input" placeholder="Ваше имя">
+	        					</div>
+	        					<div class="form-sidebar__row">
+	        						<input type="text" class="form-sidebar__input" placeholder="Ваш e-mail">
+	        					</div>
+	        					<div class="rangeslider">
+									<div id="skipstep"></div>
+									<div class="rangeslider__nav">
+										<div id="skip-value-lower"></div>
+										<div id="skip-value-upper"></div>
+									</div>
+								</div>
+	        					<div class="form-sidebar__row">
+	        						<textarea type="text" class="form-sidebar__textarea" placeholder="Ваш отзыв"></textarea>
+	        					</div>
+		        			</div>
+		        			<div class="reviews-bottom">
+		        				<button class="btn btn--blue">оценить</button>
+		        			</div>
+		        		</div>
+					</div>
+				</aside>
 			</div>
 		</div>
 	</section>
 
-	<div class="s-content">
+	<section class="footer-content">
 		<div class="container">
-			<div class="row align-items-center s-content-grid__row">
-				<div class="col-md-8">
-					<div class="s-content-head">
-						<h1 class="head-60">Fashion Studio Creative</h1>
-						<p>Несколько слов о марке и бренде. </p>
-					</div>
-					<p>Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки.</p>
-					<p>Несколько слов о марке и бренде. Буквально 3-4 строки. Несколько слов о марке и бренде. Буквально 3-4 строки. </p>
-				</div>
-				<div class="col-md-4">
-					<a href="#" class="cashback">
-						<div class="tl-center">
-							<img src="img/city-life.png" alt="alt">
-						</div>
-						<div class="head-60"><span>КэшБэк</span><br> с покупки</div>
-					</a>
-				</div>
+			<div class="footer-content__item">
+				<div class="h2 h2--white">Бесплатные прогнозы на футбол с анализом</div>
+				<p>Наш сайт поможет разобраться в бескрайнем океане спортивных событий и выбрать достойные варианты для ставок в букмекерских конторах. Прогнозы на футбол не делаются случайно — все варианты подробно разбираются и анализируются, после чего пользователям предоставляется бесплатная возможность ознакомиться с прогнозами.</p>
 			</div>
-			<div class="s-content-grid">
-				<div class="row s-content-grid__row">
-					<a href="#" class="col-md-6">
-						<div class="s-content-item">
-							<div class="s-content-item__img image">
-								<img src="img/grid-1.jpg" alt="alt">
-							</div>
-						</div>
-					</a>
-					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item--bot">
-							<div class="s-content-item__img image">
-								<img src="img/grid-2.jpg" alt="alt">
-							</div>
-							<div class="tl-center linked">
-								<h2 class="head-48 anim tl-center pt-15">Специальные<br> предложения</h2>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="row s-content-grid__row">
-					<a href="#" class="col-md-6">
-						<div class="s-content-item">
-							<div class="s-content-item--long">
-								<h2 class="s-content-item-head head-60">
-									<span>Рас</span><br> прод <br>- ажа
-								</h2>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="col-md-6">
-						<div class="s-content-item half">
-							<div class="s-content-item--left s-content-item--half"></div>
-							<h2 class="head-60 goods-day goods-day--left tl-right">Товар <span>месяца</span></h2>
-						</div>
-						<div class="s-content-item half">
-							<h2 class="head-60 goods-day goods-day--right">Товар <span>дня</span></h2>
-							<div class="s-content-item--right s-content-item--half"></div>
-						</div>
-					</a>
-				</div>
-				<div class="s-banner__slider s-content-grid__row">
-					<a href="#" class="s-main__slide image">
-						<img src="img/sale-1.jpg" alt="alt">
-					</a>
-					<a href="#" class="s-main__slide image">
-						<img src="img/sale-2.jpg" alt="alt">
-					</a>
-				</div>
-				<div class="row">
-					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item-720">
-							<div class="s-content-item__img image">
-								<img src="img/grid-6.jpg" alt="alt">
-							</div>
-							<div class="tl-center linked">
-								<div class="s-content-item__head anim head-48 ">Осенние комплекты</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="col-md-6">
-						<div class="s-content-item s-content-item-720">
-							<div class="s-content-item__img image">
-								<img src="img/grid-7.jpg" alt="alt">
-							</div>
-							<div class="tl-center linked">
-								<div class="s-content-item__head anim head-48">Одежда для женщин</div>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section class="s-footer">
-		<div class="s-footer__slider">
-			<div class="s-footer__slide image">
-				<img src="img/instagram.png" alt="" class="s-footer__slide-img">
-			</div>
-			<div class="s-footer__slide image">
-				<img src="img/insgram-bg.jpg" alt="alt" class="s-footer__slide-bg">
-				<img src="img/instagram.png" alt="" class="s-footer__slide-img">
+			<div class="footer-content__item">
+				<div class="h2 h2--white">Преимущества прогнозов от football-prognozi.ru</div>
+				<p>Футбол — самый популярный вид спорта на планете как среди болельщиков, так и среди любителей заработать на ставках в букмекерских конторах. Поэтому внимание наших аналитиков сосредоточено именно на прогнозах на исход футбольных матчей. В отличие от экзотических или просто не столь популярных видов спорта, футбольные прогнозы — это почва, где каждый болельщик и игрок в БК может оспорить мнение экспертов и вступить с ними в виртуальный поединок, чтобы проверить свою компетентность.</p>
+				<p>Казалось бы, прогноз на футбольный матч — дело нехитрое, но всё не так просто, как хотелось бы. На исход футбольного матча влияет множество факторов, которые не всегда известны рядовому пользователю, но всегда учитываются аналитиками сайта <a href="#">football-prognozi.ru </a> при составлении футбольных прогнозов:</p>
+				<ul>
+					<li>- Травмы ведущих игроков или возвращение на поле после повреждений.</li>
+					<li>- Потери команд в связи с дисквалификациями.</li>
+					<li>- Арбитр матча и его статистика.</li>
+					<li>- Погодные условия и качество поля.</li>
+					<li>- Турнирная мотивация или отсутствие оной.</li>
+					<li>- Внутрикомандные конфликты.</li>
+					<li>- Принципиальные отношения между соперниками.</li>
+					<li>- Беспроигрышные, безвыигрышные и прочие серии встречающихся команд.</li>
+					<li>- Тонкости турнирных раскладов и правил распределения мест в различных турнирах.</li>
+				</ul>
+				<p>Бесплатные прогнозы на нашем сайте помогают игрокам не только находить отличный вариант для размещения ставки, но и рассказывают о тонкостях и подводных камнях поединка, которые наталкивают пользователя на собственные мысли и решения или выводят его из состояния заблуждения.</p>
 			</div>
 		</div>
 	</section>
 
-	<footer class="footer footer--main">
+	<section class="footer-nav">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="footer-widget">
-						<div class="footer-widget__head">О нас</div>
-						<ul class="footer-widget__list linked">
-							<li><a href="#">О марке</a></li>
-							<li><a href="#">Lookbook</a></li>
-							<li><a href="#">Технологии</a></li>
-							<li><a href="#">Оптовым покупателям</a></li>
-							<li><a href="#">Подписка на новости</a></li>
-						</ul>
+			<ul class="footer-nav__list">
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">контакты</a></li>
+				<li><a href="#">легальные букмекеры</a></li>
+				<li><a href="#">расчет вилок онлайн</a></li>
+				<li><a href="#">топ букмекеров</a></li>
+				<li><a href="#">карта сайта</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-lg-8 white white--footer ">
+					<div class="d-lg-flex footer-left">
+						<div class="footer-item">
+							<div class="footer-logo">
+								<img src="img/logo.png" alt="alt">
+							</div>
+							<div class="socials">
+								<div class="socials__head">Мы в социальных сетях</div>
+								<ul class="socials-list">
+									<li>
+										<a href="#">
+											<img src="img/vk.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/facebook.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/trwitter.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/inst.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/youtube.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/telegr.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<img src="img/google.png" alt="alt">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-item">
+							<div class="h2 h2--white ttu">о нас</div>
+							<p>Всем, привет друзья!</p>
+							<p>Меня зовут Георгий Молотов. Являюсь автором и создателем этого сайта, посвященного анализу и прогнозам на футбольные матчи. Родился 26 мая, 1990 года в Севастополе.</p>
+						</div>
 					</div>
+					<p>На данный момент я занимаюсь только своим сайтом и углубляюсь в тему бэттинга, пока что получается весьма неплохо. И параллельно делаю ставки, занимаюсь этим уже на протяжении 3-х лет.</p>
+					<p>Закончил я Севастопольский Национальный Технический Университет на факультете «Финансы и кредит» и допом еще закончил менеджмент. Работал менеджером в компании по продаже инновационных решений в строительстве, получалось весьма неплохо, но было мало драйва и + еще наступило время кризиса и многие строители заморозили объекты. И я начал увлекаться ставками.</p>
+					<p>С 2015 по 2016 работал спортивным аналитиком на vseprosport.ru. И в итоге решил завести свой портал, хочется поделиться информацией с новичками и конечно пообщаться с профи. Также со мной в команде будут работать два моих друга, жутко фанатеющих по футболу, один ярый фанат англии, а второй спец по Лалиге и Испании. Вместе мы будем анализировать предстоящие матчи и делиться ими с Вами, дорогие друзья!</p>
 				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="footer-widget">
-						<div class="footer-widget__head">Помощь</div>
-						<ul class="footer-widget__list linked">
-							<li><a href="#">Условия работы</a></li>
-							<li><a href="#">Оплата</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Возврат товара</a></li>
-							<li><a href="#">Бонусная программа</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="footer-widget">
-						<div class="footer-widget__head">Покупателям</div>
-						<ul class="footer-widget__list linked">
-							<li><a href="#">Политика конфиденциальности</a></li>
-							<li><a href="#">Публичная оферта</a></li>
-							<li><a href="#">Таблица Размеров</a></li>
-							<li><a href="#">Уход за тканью</a></li>
-							<li><a href="#">Карта сайта</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="footer-widget">
-						<div class="footer-widget__head">Контакты</div>
-						<p>Напишите нам</p>
-					</div>
-					<ul class="socials">
-						<li><a href="#"><img src="img/fb.png" alt="alt"></a></li>
-						<li><a href="#"><img src="img/insta.png" alt="alt"></a></li>
-						<li><a href="#"><img src="img/youtube.png" alt="alt"></a></li>
-					</ul>
+				<div class="col-lg-4 footer-form">
+					<div class="h2 h2--white ttu tl-right">обратная связь</div>
+					<form action="/" class="form form-footer">
+						<div class="form-footer__row">
+							<input type="text" class="form-footer__input" placeholder="Владислав">
+						</div>
+						<div class="form-footer__row">
+							<input type="text" class="form-footer__input" placeholder="mail@gmail.com">
+						</div>
+						<div class="form-footer__row">
+							<input type="text" class="form-footer__input" placeholder="Hello!">
+						</div>
+						<div class="form-footer__row">
+							<textarea class="form-footer__textarea" placeholder="Текст сообщения"></textarea>
+						</div>
+						<div class="d-sm-flex align-items-start">
+							<div class="g-recaptcha" style="transform:scale(0.65);transform-origin:0 0" data-sitekey="6LduUHkUAAAAAH6ANfigQ01JDdghC_6kBZEk6SQ4"></div>
+							<button class="btn btn--blue ttu">отправить</button>
+						</div>
+					</form>
 				</div>
 			</div>
+			<div class="copyright">Все права защищены 2016-1017 © <br>thefrest design</div>
 		</div>
 	</footer>
 
-	<!-- MODAL REGISTRATION -->
+	
 
-	<div class="modal form modal-registr mfp-hide mfp-with-anim" id="registr">
-		<img src="img/modal-close.png" alt="alt" class="modal__close">
-		<div class="modal__head tl-center head-48">Регистрация</div>
-		<form action="/" class="modal-form">
-			<div class="modal-form__row">
-				<input type="text" class="modal-form__input" placeholder="Фамилия">
-			</div>
-			<div class="modal-form__row">
-				<input type="text" class="modal-form__input" placeholder="Имя">
-			</div>
-			<div class="modal-form__row">
-				<input type="text" class="modal-form__input" placeholder="Отчество">
-			</div>
-			<div class="modal-form__row">
-				<input type="text" class="modal-form__input" placeholder="Телефон">
-			</div>
-			<div class="modal-form__row">
-				<input type="text" class="modal-form__input" placeholder="Город">
-			</div>
-			<div class="tl-center">
-				<button class="btn btn--black btn--300">Зарегистрироваться</button>
-			</div>
-		</form>
-	</div>
-
-	<!-- MODAL LOGIN -->
-
-	<div class="modal form modal-registr mfp-hide mfp-with-anim" id="login">
-		<img src="img/modal-close.png" alt="alt" class="modal__close">
-		<div class="modal__head tl-center head-48">Вход на сайт</div>
-		<form action="/" class="modal-form">
-			<div class="modal-form__row">
-				<input type="text" class="modal-form__input" placeholder="Фамилия">
-			</div>
-			<div class="modal-form__row">
-				<input type="text" class="modal-form__input" placeholder="Имя">
-			</div>
-			<div class="modal-form__row d-sm-flex align-items-center justify-content-between">
-				<div class="modal-form__check">
-					<input type="checkbox" id="check" checked>
-					<label for="check">Запомнить меня</label>
-				</div>
-				<a href="#forgot" class="modal-form__pass" data-effect="mfp-zoom-out">Забыли пароль</a>
-			</div>
-			<div class="d-md-flex modal-form__nav">
-				<a href="#registr" class="btn btn--trans btn-registr" data-effect="mfp-zoom-out">Регистрация</a>
-				<button class="btn btn--black btn--300">Войти</button>
-			</div>
-		</form>
-	</div>
-
-	<!-- MODAL LOGIN -->
-
-	<div class="modal form modal-registr mfp-hide mfp-with-anim" id="forgot">
-		<img src="img/modal-close.png" alt="alt" class="modal__close">
-		<div class="modal__head tl-center head-48">Введите емаил</div>
-		<form action="/" class="modal-form">
-			<div class="modal-form__row">
-				<input type="text" class="modal-form__input" placeholder="Почта">
-			</div>
-			<div class="tl-center">
-				<button class="btn btn--black btn--300">Отправить</button>
-			</div>
-		</form>
-	</div>
-
+	
 
 	<!-- Custom HTML -->
 
 	<script src="js/scripts.min.js"></script>
-	<script src="js/common.js"></script>
 
 </body>
 </html>
