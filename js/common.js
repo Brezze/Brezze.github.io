@@ -52,21 +52,8 @@ $(function() {
 	  	$(this).addClass('actives');
 	})
 
-	$(".bet-row").Lazy({
-	    // custom loaders
-	    customLoaderName: function(element) {
-	        element.load();
-	    },
-     	asyncLoader: function(element) {
-            setTimeout(function() {
-                element.load()
-            }, 50);
-        },
-	});
-
 
 });
-
 
 
 // RANGE SLIDER
