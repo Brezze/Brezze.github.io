@@ -1,5 +1,9 @@
 $(function() {
 
+	$('#ratings').barrating({
+        theme: 'fontawesome-stars'
+      });
+
 	$(".search__btn").click(function(){
 		$(".search-input").toggleClass("search-input--open");
 		$(".search__btn").replaceWith("<button class=\"search__btn\"><img src=\"img/search_icon.png\" alt=\"alt\"></button>")
