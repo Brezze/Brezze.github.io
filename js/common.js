@@ -60,6 +60,13 @@ $(function() {
 });
 
 
+
+    	$('.main-list > li').click(function(){
+    		$(this).find('.submenu').slideToggle();
+    	});
+
+
+
 // RANGE SLIDER
 
 var skipSlider = document.getElementById('skipstep');
