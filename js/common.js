@@ -56,14 +56,17 @@ $(function() {
 	  	$(this).addClass('actives');
 	})
 
-
-});
-
-
-
-    	$('.main-list > li').click(function(){
+	if ($(window).width() < 992) {
+	   $('.main-list > li').click(function(){
     		$(this).find('.submenu').slideToggle();
     	});
+	}
+
+});
+	
+
+
+    	
 
 
 
