@@ -1,97 +1,92 @@
 $(function() {
 
-	$('#ratings').barrating({
-        theme: 'fontawesome-stars'
-      });
-
-	$(".search__btn").click(function(){
-		$(".search-input").toggleClass("search-input--open");
-		$(".search__btn").replaceWith("<button class=\"search__btn\"><img src=\"img/search_icon.png\" alt=\"alt\"></button>")
+    $('.clients-slider').slick({
+	  infinite: true,
+	  slidesToShow: 5,
+	  slidesToScroll: 1,
+	  rows: false,
+	  responsive: [
+	    {
+	      breakpoint: 1025,
+	      settings: {
+	        slidesToShow: 4,
+	      }
+	    },
+	    {
+	      breakpoint: 767,
+	      settings: {
+	        slidesToShow: 3,
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
 	});
 
-	$('.hamburger').click(function(){
-		$(this).toggleClass('is-active');
-		$('.main-nav').toggleClass('active');
-		$('body').toggleClass('hidden')
+    $('.propose-slider__item-content').first().show().animate({
+	    width: '40%',
+	  });
+	  $('.propose-slider__item-num').click(function() {
+	    $(this)
+	      .next().show().animate({
+	        width: '40%',
+	      })
+	      .siblings(".propose-slider__item-content").animate({
+	        width: 0
+	      });
+
+	  });
+
+	$('.scroll[href*="#"]').on('click', function (e) {
+		e.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top
+		}, 1100, 'linear');
 	});
 
-    $(".tab_item").not(":first").hide();
-	$(".wrapper .tab").click(function() {
-		$(".wrapper .tab").removeClass("is-active").eq($(this).index()).addClass("is-active");
-		$(".tab_item").hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass("is-active");
+	  $('.callbacks').magnificPopup({
+		  type:'inline',
+		  removalDelay: 500, //delay removal by X to allow out-animation
+		  callbacks: {
+		    beforeOpen: function() {
+		       this.st.mainClass = this.st.el.attr('data-effect');
+		    }
+		  },
+		  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
 
-	$('.groups-list > li').click(function(){
-		$(this).find('.dropdown').slideToggle();
-		if($(this).hasClass('has-dropdown')) {
-			$(this).toggleClass('active');
-		}
-	})
+	  $('.map-item').magnificPopup({
+		  type:'inline',
+		  removalDelay: 500, //delay removal by X to allow out-animation
+		  callbacks: {
+		    beforeOpen: function() {
+		       this.st.mainClass = this.st.el.attr('data-effect');
+		    }
+		  },
+		  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
 
-    const SHOW = 10;
-	$('.our-bk li').slice(SHOW).hide().addClass('hidden');
-	$('#loadMore').on('click', function(e) {
-	  e.preventDefault();
-	  $('.our-bk li.hidden').fadeToggle();
-	});
-	$('.our-bk__btn span').click(function(){
-		$('span.active').removeClass('active');
-	  	$(this).addClass('active');
-	})
+	  $('.team-item__img-dots').magnificPopup({
+		  type:'inline',
+		  removalDelay: 500, //delay removal by X to allow out-animation
+		  callbacks: {
+		    beforeOpen: function() {
+		       this.st.mainClass = this.st.el.attr('data-effect');
+		    }
+		  },
+		  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
 
-	const SHOW2 = 4;
-	const count = $('.rating').length;
-	var total = count - 4;
+	  $('.main-video__item').magnificPopup({
+		  type: 'iframe',
+		});
 
-	$('.rating__showmore a').text(total);
-	$('.rating-block .rating').slice(SHOW2).hide().addClass('hidden');
-	$('#loadMore2').on('click', function(e) {
-	  e.preventDefault();
-	  $('.rating-block .rating.hidden').fadeToggle();
-	  $('.rating__showmore').fadeToggle();
-	  $('.rating__footer').toggleClass('active')
-	});
-	$('.rating-more span').click(function(){
-		$('span.actives').removeClass('actives');
-	  	$(this).addClass('actives');
-	})
-
-	if ($(window).width() < 992) {
-	   $('.main-list > li').click(function(){
-    		$(this).find('.submenu').slideToggle();
-    	});
-	}
-
-});
-	
-
-
-    	
-
-
-
-// RANGE SLIDER
-
-var skipSlider = document.getElementById('skipstep');
-
-noUiSlider.create(skipSlider, {
-	step: 1,
-	tooltips: true,
-    range: {
-        'min': 0,
-        'max': 100
-    },
-    start: [0, 100],
-	format: wNumb({
-	    decimals: 0,
-	})
-});
-
-var skipValues = [
-    document.getElementById('skip-value-lower'),
-    document.getElementById('skip-value-upper')
-];
-
-skipSlider.noUiSlider.on('update', function (values, handle) {
-    skipValues[handle].innerHTML = values[handle];
 });
