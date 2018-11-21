@@ -23,24 +23,56 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,500i,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 </head>
 
 <body>
 
 	<header class="header">
 		<div class="container">
-			<div class="row align-items-center justify-content-md-between justify-content-start">
+			<div class="row align-items-center justify-content-between">
 				<div class="col-auto">
-					<a href="#" class="logo d-flex align-items-center">
-						<span class="logo-orange">UP&UP </span>
-						<span class="logo-text">by <br>Pro Retail</span>
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="alt">
 					</a>
 				</div>
-				<div class="col-auto">
-					<div class="phone">
-						<a href="tel:+375 (29) 506-47-07" class="phone__link font-20">+375 (29) 506-47-07</a>
-						<a href="#callback" class="phone__modal callbacks" data-effect="mfp-zoom-out">заказать звонок</a>
+				<div class="col no-rel">
+					<div class="header-left">
+						<div class="hamburger">
+							<div class="hamburger-inner">
+								
+							</div>
+						</div>
+						<div class="header__info d-md-flex align-items-center">
+							<a href="tel:+420123456789" class="phone">+420 123 456 789</a>
+							<ul class="socials socials--header">
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<nav class="main-nav">
+							<ul class="main-list">
+								<li><a href="#">Home</a></li>
+								<li><a href="#accordion">Výhody dárcovství</a></li>
+								<li><a href="#heart">Postup darování vajíček</a></li>
+								<li><a href="#conctacts">Kontakt</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
@@ -48,880 +80,214 @@
 	</header>
 
 	<section class="main">
+		<div class="main__slider">
+			<div class="main__slide">
+				<div class="main__slide-bg">
+				</div>
+				<div class="container">
+					<h1 class="h1">DARUJTE VAJÍČKA</h1>
+					<div class="main__subhead">Vaši snahu odměníme 25 000 Kč</div>
+				</div>
+			</div>
+			<div class="main__slide">
+				<div class="main__slide-bg">
+				</div>
+				<div class="container">
+					<h1 class="h1">Výhody darování</h1>
+					<div class="main__subhead">Vaši snahu odměníme 35 000 Kč</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="info">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7">
-					<div class="main-head">
-						<div class="main-head__prehead font-25">Не знаете чему посвятить свое будущее?</div>
-						<h1 class="h1">UP&UP</h1>
-						<div class="main-head__subhead">4 недели обучения с поддержкой бизнес-экспертов</div>
-						<div class="d-md-flex">
-							<a href="#registr" class="scroll btn btn--round btn--orange">Регистрация</a>
-							<a href="#" class="btn btn--round btn--white ml-25">Узнать больше</a>
-						</div>
+				<div class="col-lg-4">
+					<h2 class="h2">Proč darovat</h2>
+				</div>
+				<div class="col-lg-8">
+					<div class="info-content">
+						<p class="font-37">Některé ženy mají jen jednu možnost, jak otěhotnět: <strong>umělým oplodněním s darovanými vajíčky.</strong><br> Bez Vás to ale nepůjde. <strong><br>Pomozte jim splnit si sen.</strong></p>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery">
+		<div class="gallery-wrap">
+			<div class="gallery-wrap__item">
+				<img src="img/features-1.jpg" alt="alt">
+			</div>
+			<div class="gallery-wrap__item">
+				<img src="img/features-2.jpg" alt="alt">
+			</div>
+			<div class="gallery-wrap__item">
+				<img src="img/features-3.jpg" alt="alt">
+			</div>
+			<div class="gallery-wrap__item">
+				<img src="img/features-4.jpg" alt="alt">
+			</div>
+		</div>
+	</section>
+
+	<section class="s-accordion" id="accordion">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h2 class="h2">Výhody darování</h2>
+				</div>
+				<div class="col-lg-8">
+					<ul class="accordion">
+						<li>
+							<a href="#">Anonymně a diskrétně</a>
+							<div class="drop">
+								<p>(Nemusíte se bát, nikomu o Vás neřekneme. Darování je oboustranně anonymní)</p>
+							</div>
+						</li>
+						<li>
+							<a href="#">Zdravotní a genetické vyšetření</a>
+							<div class="drop">
+								<p>(Nemusíte se bát, nikomu o Vás neřekneme. Darování je oboustranně anonymní)</p>
+							</div>
+						</li>
+						<li>
+							<a href="#">Odměna</a>
+							<div class="drop">
+								<p>(Nemusíte se bát, nikomu o Vás neřekneme. Darování je oboustranně anonymní)</p>
+							</div>
+						</li>
+						<li>
+							<a href="#">Pomoc druhým</a>
+							<div class="drop">
+								<p>(Nemusíte se bát, nikomu o Vás neřekneme. Darování je oboustranně anonymní)</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="heart" id="heart">
+		<div class="container-fluid">
+			<div class="row">
 				<div class="col-lg-5">
-					<div class="main-video">
-						<a href="https://www.youtube.com/watch?v=vU09wQerc54&t=1s" class="main-video__item">
-							<div class="main-video__item-play">
-								<img src="img/play-button.png" alt="alt">
-							</div>
-							<div class="main-video__item-head">Видеоприглашение</div>
-						</a>
-						<div class="main-video__row">
-							<div class="main-video__text">А в случае, если Вы уже работаете в продажах и уже знаете, что это Ваша история, тогда Вам сюда</div>
-							<a href="#" class="main-video__enter">
-								<img src="img/door.png" alt="alt">
-							</a>
+					<div class="image">
+						<img src="img/heart.jpg" alt="alt">
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="flex-center">
+						<div class="heart-content tl-center">
+							<h2 class="h2">Jak se stát dárkyní</h2>
+							<p class="font-37">Pokud je vám 18-32 let a výsledky vyšetření u nás na klinice budou v pořádku, nic Vám nestojí v cestě stát se dárkyní vajíček.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section class="who indent">
-		<img src="img/mountains.png" alt="alt" class="who__img">
-		<div class="container">
-			<div class="row justify-content-end">
-				<div class="col-lg-9">
-					<div class="who-content">
-						<div class="who-content__subhead font-34">Кто мы?</div>
-						<h2 class="who-content__head font-27">UP&UP –  новый уникальный проект<br> компании Pro Retail. </h2>
-						<p>Мы - проект Группы Компаний «Pro Retail» - консалтинговой компании, которая занимается развитием и обучением зарабатывающих подразделений компаний, а также повышением уровня сервиса в Беларуси.</p>
-						<ul class="who-list">
-							<li>ГК «Pro Retail»  – это 3 проекта (Audit Service, Pro Retail и UP&UP -   все связаны с сервисом и коммерцией)</li>
-							<li>9  лет на рынке</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="clients">
-				<div class="clients-head font-25">Клиенты компании</div>
-				<div class="clients-slider">
-					<div class="clients-item"></div>
-					<div class="clients-item"></div>
-					<div class="clients-item"></div>
-					<div class="clients-item"></div>
-					<div class="clients-item"></div>
-					<div class="clients-item"></div>
-					<div class="clients-item"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="propose indent">
-		<div class="container">
-			<h2 class="propose__head tl-center">Что мы предлагаем?</h2>
-			<div class="propose-block">
-				<div class="row justify-content-between">
-					<div class="col-sm-auto">
-						<div class="propose-item">
-							<div class="propose-item__head">Для Вас:</div>
-							<p class="font-20">Получите профессию и возможность устроиться в ведущие компании Беларуси</p>
-						</div>
-					</div>
-					<div class="col-sm-auto">
-						<div class="propose-item propose-item--right">
-							<div class="propose-item__head">Для Бизнеса:</div>
-							<p class="font-20">Решить проблему с потенциальными сотрудниками</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="propose-slider">
-				<div class="propose-slider__head">
-					<div class="propose-slider__head-mobile">Вы получите</div>
-					<img src="img/slider-head.png" alt="alt">
-				</div>
-				<div class="propose-slider__wrap">
-					<div class="propose-slider__item-num">1</div>
-					<div class="propose-slider__item-content">
-						<strong>Команда тренеров</strong> – обучение у практиков и реальных бизнесменов, мастеров спорта в своей теме, которые знают особенности работы с Клиентами, большими и малыми;
-					</div>
-					<div class="propose-slider__item-num">2</div>
-					<div class="propose-slider__item-content">
-						<strong>Команда тренеров</strong> – обучение у практиков и реальных бизнесменов, мастеров спорта в своей теме, которые знают особенности работы с Клиентами, большими и малыми;
-					</div>
-					<div class="propose-slider__item-num">3</div>
-					<div class="propose-slider__item-content">
-						<strong>Команда тренеров</strong> – обучение у практиков и реальных бизнесменов, мастеров спорта в своей теме, которые знают особенности работы с Клиентами, большими и малыми;
-					</div>
-					<div class="propose-slider__item-num">4</div>
-					<div class="propose-slider__item-content">
-						<strong>Команда тренеров</strong> – обучение у практиков и реальных бизнесменов, мастеров спорта в своей теме, которые знают особенности работы с Клиентами, большими и малыми;
-					</div>
-					<div class="propose-slider__item-num">5</div>
-					<div class="propose-slider__item-content">
-						<strong>Команда тренеров</strong> – обучение у практиков и реальных бизнесменов, мастеров спорта в своей теме, которые знают особенности работы с Клиентами, большими и малыми;
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="indent consult">
-		<div class="container">
-			<div class="d-lg-flex align-items-center">
-				<h2 class="consult-head">Ок, все это неплохо<br> звучит, а что дальше?</h2>
-				<div class="consult-nav">
-					<a href="#" class="consult-nav__get font-22">Получить консультацию</a>
-					<span class="consult-nav__wrap">
-						<a href="#mission" class="scroll consult-nav__more font-22">Читать дальше</a>
-					</span>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="mission" id="mission">
-		<div class="container">
+	
+	<section class="answer">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6">
-					<h2 class="font-34">Наc волнует, что:</h2>
-					<img src="img/mission-left.png" alt="alt">
-					<div class="mission-mobiles">
-						<p>Людей нет в продажах, потому что слово «продажи» их пугают.</p>
-						<p>Люди занимаются продажами, но каждый день задаются вопросом: «А моё ли это?»</p>
-						<p>Молодые и активные в поисках себя и финансовых перспектив не знают с чего начать</p>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<h2 class="font-34 mb-0 mission-mobile">Наша миссия:</h2>
-					<img src="img/mission.png" alt="alt">
-					<div class="mission-mobiles">
-						<p>Людей нет в продажах, потому что слово «продажи» их пугают.</p>
-						<p>Людей нет в продажах, потому что слово «продажи» их пугают.</p>
-						<p>Людей нет в продажах, потому что слово «продажи» их пугают.</p>
-					</div>
-					<div class="mission-text font-25"><span>UP&UP Курс «Построй свою карьеру в продажах» -</span><br>  поможет Вам найти ответы и влюбиться в эту профессию!</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="indent team">
-		<div class="container">
-			<h2 class="team-head font-34">Команда курса</h2>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="team-item">
-						<div class="team-item__img">
-							<img src="img/team.png" alt="alt">
-							<a href="#team" data-effect="mfp-zoom-out" class="team-item__img-dots">...</a>
-						</div>
-						<div class="team-item__content">
-							<div class="team-item__head font-34">Евгений Вяткин</div>
-							<p>Эксперт в области продаж и развития переговорных навыков, построения и развития коммерческих блоков компании, со-основатель ГК “Pro Retail”,  автор «Школы продаж Евгения Вяткина», фанат своего дела</p>
+				<div class="col-lg-7 order-2 order-lg-1">
+					<div class="flex-center flex-center--bg">
+						<div class="answer-content">
+							<h2 class="h2">Ozvěte se nám</h2>
+							<div class="d-md-flex align-items-center">
+								<i class="far fa-envelope"></i>
+								<p class="font-37">Nechte nám na sebe kontakt.<br> Zcela nezávazně. <br>Ozveme se Vám zpět.</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="team-item">
-						<div class="team-item__img">
-							<img src="img/team.png" alt="alt">
-							<a href="#team2" data-effect="mfp-zoom-out" class="team-item__img-dots">...</a>
-						</div>
-						<div class="team-item__content">
-							<div class="team-item__head font-34">Евгений Вяткин</div>
-							<p>Эксперт в области продаж и развития переговорных навыков, построения и развития коммерческих блоков компании, со-основатель ГК “Pro Retail”,  автор «Школы продаж Евгения Вяткина», фанат своего дела</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="team-item">
-						<div class="team-item__img">
-							<img src="img/team.png" alt="alt">
-							<a href="#team3" data-effect="mfp-zoom-out" class="team-item__img-dots">...</a>
-						</div>
-						<div class="team-item__content">
-							<div class="team-item__head font-34">Евгений Вяткин</div>
-							<p>Эксперт в области продаж и развития переговорных навыков, построения и развития коммерческих блоков компании, со-основатель ГК “Pro Retail”,  автор «Школы продаж Евгения Вяткина», фанат своего дела</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="team-item">
-						<div class="team-item__img">
-							<img src="img/team.png" alt="alt">
-							<a href="#team4" data-effect="mfp-zoom-out" class="team-item__img-dots">...</a>
-						</div>
-						<div class="team-item__content">
-							<div class="team-item__head font-34">Евгений Вяткин</div>
-							<p>Эксперт в области продаж и развития переговорных навыков, построения и развития коммерческих блоков компании, со-основатель ГК “Pro Retail”,  автор «Школы продаж Евгения Вяткина», фанат своего дела</p>
-						</div>
+				<div class="col-lg-5 order-1 order-lg-2">
+					<div class="image">
+						<img src="img/laptop.jpg" alt="alt">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="get">
+	<section class="contacts" id="conctacts">
 		<div class="container">
-			<h2 class="get__head"><span>Что я<br> получу</span> в<br> результате?</h2>
-			<div class="get-block">
-				<div class="get-block-row">
-					<div class="get-item get-item--213">
-						<div class="get-item__num">40</div>
-						<p>Часов - теории и практики</p>
-					</div>
-					<div class="get-item get-item--245">
-						<div class="get-item__num">80<span>%</span></div>
-						<p>курса – практических занятий в подгруппах</p>
-					</div>
-				</div>
-				<div class="get-block-row">
-					<div class="get-item get-item--300">
-						<div class="get-item__num">24<span>/7 </span></div>
-						<p>обратная связь – в закрытой группе в течении всего курса Вас ждет постоянная поддержка и общение с Экспертом</p>
-					</div>
-					<div class="get-item get-item--364">
-						<div class="get-item__num">100<span>%</span></div>
-						<p>погружение в профессию будущего – Ваша уверенность и профессиональная готовность: будете знать, с чего начать, кому и как продавать и как управлять этим процессом. Просто возьмёте и сделаете!</p>
-					</div>
-					<div class="get-item get-item--356">
-						<div class="get-item__num">10</div>
-						<p>модулей обучения - подробный путь работы коммерсанта, включая организацию работы с первого рабочего дня и первого контакта с Клиентом, до завершения сделки и дальнейшего развития отношений</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="indent map">
-		<div class="container">
-			<h2 class="h2 h2--64 tl-center white">Карта курса</h2>
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">1 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
+			<form class="contacts-block">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="contacts__row">
+							<input type="text" class="contacts__input" placeholder="Jméno">
 						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block2" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">2 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
+						<div class="contacts__row">
+							<input type="text" class="contacts__input" placeholder="Email *" required>
 						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block3" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">3 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block4" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">4 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block5" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">5 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block6" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">6 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block7" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-2.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block8" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">8 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block9" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">9 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block10" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__block font-25">10 блок</div>
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-1.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="#popup_block11" class="map-item" data-effect="mfp-zoom-out">
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-2.png" alt="alt">
-							</div>
-							<div class="map-item__text font-20">Карьера продавца: из чего состоит персональный успех</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="map-item map-item--last">
-						<div class="map-item__row">
-							<div class="map-item__img">
-								<img src="img/map-item-3.png" alt="alt">
-							</div>
-							<div class="wrap">
-								<div class="map-item__text font-27">Запросить подробную программу?</div>
-								<a href="#callback" class="phone__modal callbacks" data-effect="mfp-zoom-out">заказать звонок</a>
-							</div>
+						<div class="contacts__row">
+							<input type="text" class="contacts__input" placeholder="Telefon">
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="features">
-		<div class="container">
-			<div class="row align-items-end">
-				<div class="col-lg-4 col-md-6">
-					<div class="features-item features-item__first">
-						<div class="features-item__first-img">
-							<img src="img/features-1.png" alt="alt">
-						</div>
-						<div class="features-item__first-head font-34">Что еще я получу после прохождения курса?</div>
+					<div class="col-md-6">
+						<textarea class="contacts__textarea" placeholder="Napište nám"></textarea>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="features-item">
-						<div class="features-item__img">
-							<img src="img/features-2.png" alt="alt">
-						</div>
-						<div class="features-item__head font-25">Профессиональная экспертиза </div>
-						<p>Получите профессиональную обратную связь от экспертов по Вашим сильным сторонам и зонам развития, Вы будете знать «куда расти»</p>
-					</div>
+				<div class="tl-center d-md-flex align-items-center justify-content-center captcha">
+					<div class="g-recaptcha" data-sitekey="6Lct9HsUAAAAAMmpCgOr_-XJrc4y8Y6Yab-kKLPO"></div>
+					<button class="btn">ODESLAT</button>
 				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="features-item">
-						<div class="features-item__img">
-							<img src="img/features-2.png" alt="alt">
-						</div>
-						<div class="features-item__head font-25">Профессиональная экспертиза </div>
-						<p>Получите профессиональную обратную связь от экспертов по Вашим сильным сторонам и зонам развития, Вы будете знать «куда расти»</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="features-item">
-						<div class="features-item__img">
-							<img src="img/features-2.png" alt="alt">
-						</div>
-						<div class="features-item__head font-25">Профессиональная экспертиза </div>
-						<p>Получите профессиональную обратную связь от экспертов по Вашим сильным сторонам и зонам развития, Вы будете знать «куда расти»</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="features-item">
-						<div class="features-item__img">
-							<img src="img/features-2.png" alt="alt">
-						</div>
-						<div class="features-item__head font-25">Профессиональная экспертиза </div>
-						<p>Получите профессиональную обратную связь от экспертов по Вашим сильным сторонам и зонам развития, Вы будете знать «куда расти»</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="features-item">
-						<div class="features-item__img">
-							<img src="img/features-2.png" alt="alt">
-						</div>
-						<div class="features-item__head font-25">Профессиональная экспертиза </div>
-						<p>Получите профессиональную обратную связь от экспертов по Вашим сильным сторонам и зонам развития, Вы будете знать «куда расти»</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="indent registr" id="registr">
-		<div class="container">
-			<h2 class="h2 h2--64 tl-center white">Регистрация</h2>
-			<form action="/" class="form form-registr">
-				<div class="form__row">
-					<div class="form__item">
-						<input type="text" class="form__input font-25" placeholder="Ваше имя">
-					</div>
-					<div class="form__item">
-						<input type="text" class="form__input font-25" placeholder="Телефон">
-					</div>
-					<div class="form__item">
-						<input type="text" class="form__input font-25" placeholder="Email">
-					</div>
-					<div class="form__item">
-						<button class="form__btn">
-							<img src="img/telegram.png" alt="alt">
-						</button>
-					</div>
-				</div>
-				<p class="registr__info font-20 tl-center">Оставьте ваш телефон и мы перезвоним в ближайшее время. А если у вас остались вопросы - заказ <a href="#callback" data-effect="mfp-zoom-out" class="callbacks">звонка</a> никто не отменял:)</p>
 			</form>
+		</div>
+	</section>
+
+	<section class="thanks">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="flex-center flex-center--bg">
+						<div class="thanks-content">
+							<h3 class="font-37">Děkujeme, že s námi pomáháte změnit životy druhým.</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="image">
+						<img src="img/child.jpg" alt="alt">
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<footer class="footer">
 		<div class="container">
-			<div class="row align-items-center justify-content-between">
-				<div class="col-sm-auto">
-					<div class="footer-logo image">
-						<img src="img/footer-logo.png" alt="alt">
-					</div>
-				</div>
-				<div class="col-sm-auto">
-					<div class="phone phone--footer">
-						<a href="tel:+375 (29) 506-47-07" class="phone__link font-20">+375 (29) 506-47-07</a>
-					</div>
-				</div>
+			<div class="footer-logo">
+				<img src="img/logo.png" alt="alt">
 			</div>
+			<ul class="socials socials--footer">
+				<li>
+					<a href="#">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</footer>
-
-	<!-- MODAL CALLBACK -->
-
-	<div class="popup popup-callback mfp-hide mfp-with-anim" id="callback">
-		<img src="img/callback-bg.png" alt="alt" class="popup-callback__img">
-		<div class="popup-callback__head tl-center">Заказать звонок</div>
-		<form action="/" class="form form-callback">
-			<div class="form-callback__row">
-				<div class="form-callback__wrap">
-					<input type="text" class="form-callback__input" placeholder="Ваше имя">
-				</div>
-			</div>
-			<div class="form-callback__row">
-				<div class="form-callback__wrap">
-					<input type="text" class="form-callback__input" placeholder="Телефон">
-				</div>
-			</div>
-			<button class="form-callback__btn font-34">ОТПРАВИТЬ</button>
-		</form>
-	</div>
-
-	<!-- MODAL TEAM -->
-
-	<!-- MODAL TEAM 1-->
-
-	<div class="popup popup-team mfp-hide mfp-with-anim" id="team">
-		<img src="img/team-popup-bg.png" alt="alt" class="popup-team__bg">
-		<div class="d-md-flex">
-			<div class="popup-team__img">
-				<img src="img/team-popup.png" alt="alt">
-			</div>
-			<div class="popup-team__content">
-				<div class="popup-team__name">Евгений Вяткин</div>
-				<p>Эксперт в области продаж и развития переговорных навыков, построения и развития коммерческих блоков компании, со-основатель ГК “Pro Retail”,  автор «Школы продаж Евгения Вяткина», фанат своего дела</p>
-				<div class="d-md-flex justify-content-between">
-					<ul class="custom-list">
-						<li>Опыт продаж с 1998 года (20 лет);</li>
-						<li>15 лет тренерского опыта;</li>
-						<li>15 авторских программ;</li>
-						<li>Обучил 34000+ сотрудников из различных сфер бизнеса;</li>
-						<li>Провёл 2400+ корпоративных тренингов.</li>
-						<li>Автор фестиваля продаж «SaleSation»</li>
-					</ul>
-					<div class="popup-team__quote">
-						<img src="img/team-quote.png" alt="alt">
-						<p>Пропагандирует, что продажи – это такая профессия…</p>
-					</div>
-				</div>
-				<div class="popup-team__nav">
-					<span>Сайт: <a href="#">pro-retail.by</a></span>
-					<span>Facebook: <a href="#">/vyatkin</a></span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- MODAL TEAM 2-->
-
-	<div class="popup popup-team mfp-hide mfp-with-anim" id="team2">
-		<img src="img/team-popup-bg.png" alt="alt" class="popup-team__bg">
-		<div class="d-md-flex">
-			<div class="popup-team__img">
-				<img src="img/team-popup.png" alt="alt">
-			</div>
-			<div class="popup-team__content">
-				<div class="popup-team__name">Евгений Вяткин2</div>
-				<p>Эксперт в области продаж и развития переговорных навыков, построения и развития коммерческих блоков компании, со-основатель ГК “Pro Retail”,  автор «Школы продаж Евгения Вяткина», фанат своего дела</p>
-				<div class="d-md-flex justify-content-between">
-					<ul class="custom-list">
-						<li>Опыт продаж с 1998 года (20 лет);</li>
-						<li>15 лет тренерского опыта;</li>
-						<li>15 авторских программ;</li>
-						<li>Обучил 34000+ сотрудников из различных сфер бизнеса;</li>
-						<li>Провёл 2400+ корпоративных тренингов.</li>
-						<li>Автор фестиваля продаж «SaleSation»</li>
-					</ul>
-					<div class="popup-team__quote">
-						<img src="img/team-quote.png" alt="alt">
-						<p>Пропагандирует, что продажи – это такая профессия…</p>
-					</div>
-				</div>
-				<div class="popup-team__nav">
-					<span>Сайт: <a href="#">pro-retail.by</a></span>
-					<span>Facebook: <a href="#">/vyatkin</a></span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- MODAL TEAM 3-->
-
-	<div class="popup popup-team mfp-hide mfp-with-anim" id="team3">
-		<img src="img/team-popup-bg.png" alt="alt" class="popup-team__bg">
-		<div class="d-md-flex">
-			<div class="popup-team__img">
-				<img src="img/team-popup.png" alt="alt">
-			</div>
-			<div class="popup-team__content">
-				<div class="popup-team__name">Евгений Вяткин3</div>
-				<p>Эксперт в области продаж и развития переговорных навыков, построения и развития коммерческих блоков компании, со-основатель ГК “Pro Retail”,  автор «Школы продаж Евгения Вяткина», фанат своего дела</p>
-				<div class="d-md-flex justify-content-between">
-					<ul class="custom-list">
-						<li>Опыт продаж с 1998 года (20 лет);</li>
-						<li>15 лет тренерского опыта;</li>
-						<li>15 авторских программ;</li>
-						<li>Обучил 34000+ сотрудников из различных сфер бизнеса;</li>
-						<li>Провёл 2400+ корпоративных тренингов.</li>
-						<li>Автор фестиваля продаж «SaleSation»</li>
-					</ul>
-					<div class="popup-team__quote">
-						<img src="img/team-quote.png" alt="alt">
-						<p>Пропагандирует, что продажи – это такая профессия…</p>
-					</div>
-				</div>
-				<div class="popup-team__nav">
-					<span>Сайт: <a href="#">pro-retail.by</a></span>
-					<span>Facebook: <a href="#">/vyatkin</a></span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- MODAL TEAM 4-->
-
-	<div class="popup popup-team mfp-hide mfp-with-anim" id="team4">
-		<img src="img/team-popup-bg.png" alt="alt" class="popup-team__bg">
-		<div class="d-md-flex">
-			<div class="popup-team__img">
-				<img src="img/team-popup.png" alt="alt">
-			</div>
-			<div class="popup-team__content">
-				<div class="popup-team__name">Евгений Вяткин4</div>
-				<p>Эксперт в области продаж и развития переговорных навыков, построения и развития коммерческих блоков компании, со-основатель ГК “Pro Retail”,  автор «Школы продаж Евгения Вяткина», фанат своего дела</p>
-				<div class="d-md-flex justify-content-between">
-					<ul class="custom-list">
-						<li>Опыт продаж с 1998 года (20 лет);</li>
-						<li>15 лет тренерского опыта;</li>
-						<li>15 авторских программ;</li>
-						<li>Обучил 34000+ сотрудников из различных сфер бизнеса;</li>
-						<li>Провёл 2400+ корпоративных тренингов.</li>
-						<li>Автор фестиваля продаж «SaleSation»</li>
-					</ul>
-					<div class="popup-team__quote">
-						<img src="img/team-quote.png" alt="alt">
-						<p>Пропагандирует, что продажи – это такая профессия…</p>
-					</div>
-				</div>
-				<div class="popup-team__nav">
-					<span>Сайт: <a href="#">pro-retail.by</a></span>
-					<span>Facebook: <a href="#">/vyatkin</a></span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK -->
-
-	<!-- MODAL BLOCK 1-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 1</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 2-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block2">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 2</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 3-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block3">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 3</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 4-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block4">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 4</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 5-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block5">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 5</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 6-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block6">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 6</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 7-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block7">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 7</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 8-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block8">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 8</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 9-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block9">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 9</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 10-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block10">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 10</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- MODAL BLOCK 11-->
-
-	<div class="popup popup-block mfp-hide mfp-with-anim" id="popup_block11">
-		<div class="popup-block__top">
-			<div class="popup-block__num font-25">БЛОК 11</div>
-			<div class="popup-block__img">
-				<img src="img/white-door.png" alt="alt">
-			</div>
-			<div class="popup-block__head font-34 tl-center">Карьера продавца: из чего состоит профессиональный успех</div>
-		</div>
-		<div class="popup-block__content">
-			<ul class="custom-list font-22">
-				<li>Что такое продажи;</li>
-				<li>Как строить карьеру в этой сфере;</li>
-				<li>Какие компетенции необходимы продавцу «нового времени» и как развивать их максимально</li>
-				<li>Что такое отраслевая специфика;</li>
-				<li>Как использовать полученные знания в свою пользу.</li>
-			</ul>
-		</div>
-	</div>
 
 	<!-- Custom HTML -->
 
 	<script src="js/scripts.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </body>
 </html>
