@@ -4,16 +4,32 @@
 var skipSlider = document.getElementById('skipstep');
 
 noUiSlider.create(skipSlider, {
-	step: 1000,
+    step: 100000,
+    start: [200000],
     range: {
-        'min': 0,
-        'max': 100000
+        'min': [200000],
+        'max': [1000000]
     },
-    start: [0, 100000],
-	format: wNumb({
-	    decimals: 0,
-	})
+    format: wNumb({
+        decimals: 0,
+        suffix: ' ₽'
+    }),
+
 });
+
+// var skipSlider = document.getElementById('skipstep');
+
+// noUiSlider.create(skipSlider, {
+// 	step: 1000,
+//     range: {
+//         'min': 0,
+//         'max': 100000
+//     },
+//     start: [0, 100000],
+// 	format: wNumb({
+// 	    decimals: 0,
+// 	})
+// });
 
 var skipValues = [
     document.getElementById('skip-value-lower'),
