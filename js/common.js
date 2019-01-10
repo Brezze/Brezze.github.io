@@ -1,72 +1,59 @@
-
 $(function() {
 
-    $('.news-block').masonry({
-      itemSelector: '.news-item',
-      gutter: 18,
-      // percentPosition: true, 
-      horizontalOrder: true
+	$(window).on("scroll",function() {
+
+        if($(this).scrollTop() > 200) 
+
+            $(".header").addClass("shadow");
+
+        else 
+
+            $(".header").removeClass("shadow");
+
+
     })
 
-   
+	$('.hamburger').click(function(){
+		$(this).toggleClass('active');
+		$('.header .col-auto:nth-child(3)').toggleClass('open');
+		$('.logo').toggleClass('mobile');
+	})
 
-    $(".tab_item").not(":first").hide();
-    $(".wrapper .tab").click(function() {
-        $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-        $(".tab_item").hide().eq($(this).index()).fadeIn()
-    }).eq(0).addClass("active");
+	$('.main-list a[href*="#"]').on('click', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top - 50 + 'px'
+		}, 500, 'linear');
+		$('.header .col-auto:nth-child(3)').removeClass('open');
+		$('.hamburger').removeClass('active');
+		$('body').removeClass('body-hidden');
+	});
 
-    $('.selectize').selectize({
-        placeholder: 'Иркутск',
-    });
+	$('.footer-list a[href*="#"]').on('click', function (e) {
+		e.preventDefault();
 
-    $('.selectize-name').selectize({
-        placeholder: '77-1917-58933: Александр Вильченко',
-    });
-
-    $('.selectize-company').selectize({
-        placeholder: 'Сбербанк Онлайн',
-    });
-
-    $('.selectize .selectize-input').before('<span>Город:</span>');
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top - 50 + 'px'
+		}, 500, 'linear');
+	});
 
     $('.main-slider').slick({
-    	rows: false,
-    	arrows: false,
-    	dots: true,
-    	useTransform: false,
+    	rows: false, 
+    	slidesToShow: 1,
+  		slidesToScroll: 1,
+  		centerMode: true,
+  		responsive: [
+	    {
+	      breakpoint: 1441,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    },
+	  ]
     })
 
-    $('.partners').slick({
-        rows: false,
-        slidesToShow: 5,
-        responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-      ]
-    })
-
-    $('.arrow').click(function(){
-    	$(this).next().toggleClass('open');
-    });
-
-    $('.hamburger').click(function() {
-      $(this).toggleClass('is-active');
-      $('body').toggleClass('hidden');
-      $('.header-top__menu').toggleClass('open');
-  });
-
-    $('.modal-button').magnificPopup({
+    $('.work--top .work-item__img').magnificPopup({
 	  type:'inline',
 	  removalDelay: 500, //delay removal by X to allow out-animation
 	  callbacks: {
@@ -77,27 +64,14 @@ $(function() {
 	  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
 
-    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+    $('.modal-item__close').on( "click", function() {
+	  $.magnificPopup.close();
+	  $('body').removeClass('body-hidden');
+	});
 
-    $('.accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('.drop');
-
-        $(this).closest('.accordion').find('.drop').not(dropDown).slideUp();
-
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $(this).closest('.accordion').find('a.active').removeClass('active');
-            $(this).addClass('active');
-        }
-
-        dropDown.stop(false, true).slideToggle();
-
-        j.preventDefault();
-    });
-
+	 $('.work--top .work-item__img').on( "click", function() {
+	  $('.header').removeClass('shadow');
+	  $('body').toggleClass('body-hidden');
+	});
 
 });
-
-      
-

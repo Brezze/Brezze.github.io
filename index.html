@@ -1,20 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
 </head>
+
 <body>
-	<ul>
-		<li><a target="_blank" href="about.html">about</a></li>
-		<li><a target="_blank" href="calc.html">calc</a></li>
-		<li><a target="_blank" href="contacts.html">contacts</a></li>
-		<li><a target="_blank" href="faq.html">faq</a></li>
-		<li><a target="_blank" href="home.html">home</a></li>
-		<li><a target="_blank" href="lk.html">lk</a></li>
-		<li><a target="_blank" href="login.html">login</a></li>
-		<li><a target="_blank" href="news.html">news</a></li>
-		<li><a target="_blank" href="payment.html">payment</a></li>
-	</ul>
+
+	<div class="screen">
+		<header class="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-auto">
+						<div class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="hamburger">
+							<div class="hamburger-inner"></div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<ul class="main-list">
+							<li>
+								<div class="logo logo-mobile">
+									<img src="img/logo.svg" alt="alt">
+								</div>
+							</li>
+							<li><a href="#work">Услуги</a></li>
+							<li><a href="#about">О нас</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container">
+				<div class="main-row">
+					<div class="main-content">
+						<div class="main-content__wrap">
+							<h1 class="h1 mb-100">Legal <br>Business<br> Alliance</h1>
+							<p>LBA – это компания, которая решит все ваши проблемы в сфере кадастровых работ и регистрации прав собственности. </p>
+						</div>
+					</div>
+					<div class="main-slider">
+						<div class="main-slide">
+							<img src="img/slider-1.jpg" alt="alt">
+						</div>
+						<div class="main-slide">
+							<img src="img/slider-2.jpg" alt="alt">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="work work--top" id="work">
+		<div class="container">
+			<h2 class="h2 mb-100">Кадастровые работы</h2>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<a href="#modal1" data-effect="mfp-zoom-out" class="work-item__img"></a>
+						<h3 class="h3">Для Завершенного Строительства</h3>
+						<p class="small">Подготовка пакета документов для получения разрешения на ввод объекта завершенного строительства в эксплуатацию.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<a href="#modal2" data-effect="mfp-zoom-out" class="work-item__img"></a>
+						<h3 class="h3">Для Незавершенного Строительства</h3>
+						<p class="small">Подготовка необходимого пакета документов для регистрации объекта незавершенного строительства.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<a href="#modal3" data-effect="mfp-zoom-out" class="work-item__img"></a>
+						<h3 class="h3">Учет и<br> Регистрация</h3>
+						<p class="small">Кадастровый учет и регистрация права на объекты недвижимости</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<a href="#modal4" data-effect="mfp-zoom-out" class="work-item__img"></a>
+						<h3 class="h3">Техническое<br> задание</h3>
+						<p class="small"> Изготовление технического плана здания, сооружений, помещений, загородного дома, квартиры.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<a href="#modal5" data-effect="mfp-zoom-out" class="work-item__img"></a>
+						<h3 class="h3">Обследование сооружений</h3>
+						<p class="small">Акт обследования здания, сооружения для снятия с кадастрового учета.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<a href="#modal6" data-effect="mfp-zoom-out" class="work-item__img"></a>
+						<h3 class="h3">Землеустроительные работы</h3>
+						<p class="small">Землеустроительные работы по межеванию земельных участков для объединения, перераспределения, раздела.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="work work--bottom">
+		<div class="container">
+			<h2 class="h2 mb-100">Проектные работы</h2>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<div class="work-item__img"></div>
+						<h3 class="h3">Обследование</h3>
+						<p class="small">Техническое обследование зданий и сооружений.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<div class="work-item__img"></div>
+						<h3 class="h3">Разработка проектова</h3>
+						<p class="small">Разработка проектов перепланировки жилых и нежилых помещений.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="work-item tl-center">
+						<div class="work-item__img"></div>
+						<h3 class="h3">Согласование</h3>
+						<p class="small">Согласование перепланировок жилых и нежилых помещений</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="container">
+			<h2 class="h2 mb-75">О компании</h2>
+			<div class="row justify-content-between align-items-center">
+				<div class="col-lg-7">
+					<p class="bigger">LBA - команда квалифицированных специалистов, предоставляющих услуги в сфере кадастрового учета и регистрации права собственности на объекты недвижимости, а также оказывающих профессиональное сопровождение регистрационных действий на всех этапах подачи документов, разработки и согласования проектной документации, технического обследования зданий и сооружений.</p>
+					<p class="bigger">В основе нашей работы лежат принципы открытого диалога и честности, взяв на себя обязательства перед заказчиком, мы выдаем на конечном этапе качественный «продукт», отвечая своей репутацией.</p>
+					<p class="bigger">Индивидуальный подход к каждому клиенту позволяет нам принимать заказы на сложные работы и выполнять их в кратчайшие сроки.</p>
+					<p class="bigger">За многолетнюю историю развития компании мы выполнили сотни проектов, и приятно осознавать, что это только начало!</p>
+				</div>
+				<div class="col-lg-3">
+					<ul class="about-list">
+						<li>Честность</li>
+						<li>Надежность</li>
+						<li>Комплексное обслуживание</li>
+						<li>Индивидуальность</li>
+						<li>Открытость</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="map">
+		<img src="img/map.jpg" alt="alt" class="map__image">
+		<div class="container">
+			<div class="row justify-content-end align-items-center">
+				<div class="col-lg-6 tl-right">
+					<h2 class="h2 mb-75">Наши контакты</h2>
+					<p class="bigger">Офис LBA расположен в Бизнец-центре Гайот на Петроградской стороне Санкт-Петербурга,  до него удобно добираться как на автомобиле, так и на общественном транспорте: он находится всего в 7 минутах ходьбы от станции метро “Петроградская”</p>
+					<p class="bigger">Санкт-Петербург, улица Профессора Повова, д. 23 лит. В Бизнес-центр Гайот, офис 307</p>
+					<p class="bigger">info@lba.spb.ru</p>
+					<p class="bigger">
+						<a href="tel:+79111729257">+7 911 172 92 57</a><br>
+						<a href="tel:+79955950242">+7 995 595 02 42</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section> 
+
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<div class="head">
+				<span>свяжитесь с нами</span>
+				<h2 class="h2 mb-100">Оставьте заявку</h2>
+			</div>
+			<form action class="form">
+				<div class="form-row">
+					<div class="row">
+						<div class="contacts-item">
+							<input type="text" class="form__input" placeholder="Имя*">
+						</div>
+						<div class="contacts-item">
+							<input type="text" class="form__input" placeholder="E-mail*">
+						</div>
+						<div class="contacts-item">
+							<input type="text" class="form__input" placeholder="Номер телефона">
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<textarea class="form__textarea" placeholder="Напишите нам"></textarea>
+				</div>
+				<div class="form-nav">
+					<button class="btn">Отправить</button>
+					<span class="policy">Нажимая кнопку “ОТПРАВИТЬ”, я даю свое<br> согласие на обработку персональных данных</span>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-auto">
+					<div class="logo-footer">
+						<img src="img/logo-footer.svg" alt="alt">
+					</div>
+					<ul class="footer-list">
+						<li><a href="#work">Услуги</a></li>
+						<li><a href="#about">О нас</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-auto tl-right">
+					<div class="footer__right">
+						<ul class="footer__right-nav">
+							<li><a href="mailto:contact@lba.spb.ru">contact@lba.spb.ru</a></li>
+							<li><a href="tel:+79111729257">+7 911 172 92 57</a></li>
+							<li><a href="tel+79955950242">+7 995 595 02 42</a></li>
+						</ul>
+						<a href="#" class="designer">created in <span>d</span><span>art</span></a>
+						<div class="copyright">Информация предоставлена на сайте для ознакомления и не является публичной офертой</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Custom HTML -->
+
+	<div class="modal mfp-hide mfp-with-anim" id="modal1">
+		<div class="modal-item__close">
+			<img src="img/popup_close.svg" alt="alt">
+		</div>
+		<div class="modal-item__logo logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+		<div class="modal-item">
+			<div class="modal-item__img">
+				
+			</div>
+			<div class="modal-item__content">
+				<div class="modal-item__head h2">Для Завершенного Строительства</div>
+				<p class="small">Специалисты компании LBA, обладая многолетним опытом и высокими профессиональными знаниями, оперативно и качественно подготовят поэтажных планы и ведомости помещений на здания, справку о технико-экономических показателях строений и сооружений, а также документы содержащие сведения о технических характеристиках объектов недвижимости. Также кадастровые инженеры нашей компании в кратчайшие сроки изготовят технический план, для дальнейшей возможности в проведении кадастрового учета и регистрации прав на Ваш объект недвижимости.</p>
+				<a href="#" class="btn btn--short">Заказать услугу</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal mfp-hide mfp-with-anim" id="modal2">
+		<div class="modal-item__close">
+			<img src="img/popup_close.svg" alt="alt">
+		</div>
+		<div class="modal-item__logo logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+		<div class="modal-item">
+			<div class="modal-item__img">
+				
+			</div>
+			<div class="modal-item__content">
+				<div class="modal-item__head h2">Для Незавершенного Строительства</div>
+				<p class="small">Специалисты компании LBA, обладая многолетним опытом и высокими профессиональными знаниями, оперативно и качественно подготовят поэтажных планы и ведомости помещений на здания, справку о технико-экономических показателях строений и сооружений, а также документы содержащие сведения о технических характеристиках объектов недвижимости. Также кадастровые инженеры нашей компании в кратчайшие сроки изготовят технический план, для дальнейшей возможности в проведении кадастрового учета и регистрации прав на Ваш объект недвижимости.</p>
+				<a href="#" class="btn btn--short">Заказать услугу</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal mfp-hide mfp-with-anim" id="modal3">
+		<div class="modal-item__close">
+			<img src="img/popup_close.svg" alt="alt">
+		</div>
+		<div class="modal-item__logo logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+		<div class="modal-item">
+			<div class="modal-item__img">
+				
+			</div>
+			<div class="modal-item__content">
+				<div class="modal-item__head h2">Учет и Регистрация</div>
+				<p class="small">Специалисты компании LBA, обладая многолетним опытом и высокими профессиональными знаниями, оперативно и качественно подготовят поэтажных планы и ведомости помещений на здания, справку о технико-экономических показателях строений и сооружений, а также документы содержащие сведения о технических характеристиках объектов недвижимости. Также кадастровые инженеры нашей компании в кратчайшие сроки изготовят технический план, для дальнейшей возможности в проведении кадастрового учета и регистрации прав на Ваш объект недвижимости.</p>
+				<a href="#" class="btn btn--short">Заказать услугу</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal mfp-hide mfp-with-anim" id="modal4">
+		<div class="modal-item__close">
+			<img src="img/popup_close.svg" alt="alt">
+		</div>
+		<div class="modal-item__logo logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+		<div class="modal-item">
+			<div class="modal-item__img">
+				
+			</div>
+			<div class="modal-item__content">
+				<div class="modal-item__head h2">Техническое задание</div>
+				<p class="small">Специалисты компании LBA, обладая многолетним опытом и высокими профессиональными знаниями, оперативно и качественно подготовят поэтажных планы и ведомости помещений на здания, справку о технико-экономических показателях строений и сооружений, а также документы содержащие сведения о технических характеристиках объектов недвижимости. Также кадастровые инженеры нашей компании в кратчайшие сроки изготовят технический план, для дальнейшей возможности в проведении кадастрового учета и регистрации прав на Ваш объект недвижимости.</p>
+				<a href="#" class="btn btn--short">Заказать услугу</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal mfp-hide mfp-with-anim" id="modal5">
+		<div class="modal-item__close">
+			<img src="img/popup_close.svg" alt="alt">
+		</div>
+		<div class="modal-item__logo logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+		<div class="modal-item">
+			<div class="modal-item__img">
+				
+			</div>
+			<div class="modal-item__content">
+				<div class="modal-item__head h2">Обследование сооружений</div>
+				<p class="small">Специалисты компании LBA, обладая многолетним опытом и высокими профессиональными знаниями, оперативно и качественно подготовят поэтажных планы и ведомости помещений на здания, справку о технико-экономических показателях строений и сооружений, а также документы содержащие сведения о технических характеристиках объектов недвижимости. Также кадастровые инженеры нашей компании в кратчайшие сроки изготовят технический план, для дальнейшей возможности в проведении кадастрового учета и регистрации прав на Ваш объект недвижимости.</p>
+				<a href="#" class="btn btn--short">Заказать услугу</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal mfp-hide mfp-with-anim" id="modal6">
+		<div class="modal-item__close">
+			<img src="img/popup_close.svg" alt="alt">
+		</div>
+		<div class="modal-item__logo logo">
+			<img src="img/logo.svg" alt="alt">
+		</div>
+		<div class="modal-item">
+			<div class="modal-item__img">
+				
+			</div>
+			<div class="modal-item__content">
+				<div class="modal-item__head h2">Землеустроительные работы</div>
+				<p class="small">Специалисты компании LBA, обладая многолетним опытом и высокими профессиональными знаниями, оперативно и качественно подготовят поэтажных планы и ведомости помещений на здания, справку о технико-экономических показателях строений и сооружений, а также документы содержащие сведения о технических характеристиках объектов недвижимости. Также кадастровые инженеры нашей компании в кратчайшие сроки изготовят технический план, для дальнейшей возможности в проведении кадастрового учета и регистрации прав на Ваш объект недвижимости.</p>
+				<a href="#" class="btn btn--short">Заказать услугу</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
 </body>
 </html>
