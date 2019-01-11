@@ -76,6 +76,8 @@ $(function() {
     	slidesToShow: 1,
   		slidesToScroll: 1,
   		centerMode: true,
+  		autoplay: true,
+ 	 	autoplaySpeed: 10000,
 	});  
 
 	setProgress(0);
