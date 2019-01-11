@@ -81,9 +81,10 @@ $(function() {
 	setProgress(0);
 
 
-    $('.work--top .work-item__img').magnificPopup({
+    $('.work-item__img').magnificPopup({
 	  type:'inline',
 	  removalDelay: 500, //delay removal by X to allow out-animation
+	  fixedContentPos: false,
 	  callbacks: {
 	    beforeOpen: function() {
 	       this.st.mainClass = this.st.el.attr('data-effect');
@@ -97,9 +98,9 @@ $(function() {
 	  $('body').removeClass('body-hidden');
 	});
 
-	 $('.work--top .work-item__img').on( "click", function() {
-	  $('.header').removeClass('shadow');
-	  $('body').addClass('body-hidden');
+	 $('.work-item__img').on( "click", function() {
+		$('.header').removeClass('shadow');
+	 	$('body').addClass('body-hidden');
 	});
 
 });
